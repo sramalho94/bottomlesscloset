@@ -44,31 +44,31 @@ const DonateModal = () => {
 
                 <div className='flex flex-col items-center'>
                     <p className='text-[#323232] text-[18px]'>
-                        Choose your 
-                        <span className='font-bold'> {paymentType} </span> 
+                        Choose your
+                        <span className='font-bold'> {paymentType} </span>
                         donation amount
                     </p>
                     <div className='flex'>
-                        <div 
-                            onClick={() => setDonationAmount(25)} 
+                        <div
+                            onClick={() => setDonationAmount(25)}
                             className={amountBtnStyling}
                         >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$25</p>
                         </div>
-                        <div 
-                            onClick={() => setDonationAmount(50)} 
+                        <div
+                            onClick={() => setDonationAmount(50)}
                             className={amountBtnStyling}
                         >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$50</p>
                         </div>
-                        <div 
-                            onClick={() => setDonationAmount(100)} 
+                        <div
+                            onClick={() => setDonationAmount(100)}
                             className={amountBtnStyling}
                         >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$100</p>
                         </div>
-                        <div 
-                            onClick={() => setDonationAmount(200)} 
+                        <div
+                            onClick={() => setDonationAmount(200)}
                             className={amountBtnStyling}
                         >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$200</p>
@@ -78,15 +78,19 @@ const DonateModal = () => {
 
                 <div className='w-[365px]'>
                     <p className='text-[#323232] text-[14px]'>Custom Donation Amount</p>
-                    <input 
-                        className='text-black text-[20px] p-[5px] w-[100%] h-[50px] border border-[#8692A6] rounded-[6px]'
-                        type='number' 
-                        value={donationAmount} 
-                        onChange={(e) => setDonationAmount(Number(e.target.value))}
-                    />
+
+                    <div className='flex items-center text-black text-[20px] p-[5px] w-[100%] h-[50px] border border-[#8692A6] rounded-[6px]'>
+                        <p className='text-black text-[20px] mr-[5px]'>$</p>
+                        <input
+                            className='text-black text-[20px] w-[100%] h-[50px] bg-transparent focus:outline-none'
+                            type='number'
+                            value={donationAmount}
+                            onChange={(e) => setDonationAmount(Number(e.target.value))}
+                        />
+                    </div>
                 </div>
 
-                <SubmitDonationBtn handleSubmit={handleSubmit}/>
+                <SubmitDonationBtn handleSubmit={handleSubmit} />
                 {/* <SubmitDonationBtn handleSubmit={handleSubmit} /> */}
 
             </div>

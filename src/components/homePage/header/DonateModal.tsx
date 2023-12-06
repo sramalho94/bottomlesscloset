@@ -4,10 +4,13 @@ import Image from 'next/image';
 
 const DonateModal = () => {
 
-    const [paymentType, setPaymentType] = useState(1)
+    const [paymentType, setPaymentType] = useState('one-time');
+    const [donationAmount, setDonationAmount] = useState(0);
 
-    const selectedStyling = "bg-[#630A0E] rounded-[20px] flex justify-center items-center w-[50%]"
-    const unselectedStyling = " text-[#630A0E] flex justify-center items-center w-[50%]"
+    const selectedStyling = "bg-[#630A0E] rounded-[20px] flex justify-center items-center w-[50%]";
+    const unselectedStyling = " text-[#630A0E] flex justify-center items-center w-[50%]";
+    const amountBtnStyling = 'flex items-center justify-center w-[88px] h-[59px] bg-[#FFDAD6] rounded-[20px] m-[2.5px]';
+
 
     return (
         <div className="w-screen h-[475px] md:w-[470px] md:h-[575px] lg:mr-[10px] lg:absolute lg:bottom-[0] lg:right-[0px] lg:z-[2] lg:pt-[287px] xl:mr-[100px]">
@@ -21,18 +24,54 @@ const DonateModal = () => {
 
                 <div className="flex flex-row bg-[#FFDAD6] rounded-[20px] w-[368px] h-[50px] mt-[40px] mb-[40px]">
                     <button
-                        onClick={() => setPaymentType(1)}
-                        className={paymentType === 1 ? selectedStyling : unselectedStyling}
+                        onClick={() => setPaymentType('one-time')}
+                        className={paymentType === 'one-time' ? selectedStyling : unselectedStyling}
                     >
                         <h1 className='text-[20px]'>One Time</h1>
                     </button>
                     <button
-                        onClick={() => setPaymentType(2)}
-                        className={paymentType === 2 ? selectedStyling : unselectedStyling}
+                        onClick={() => setPaymentType('monthly')}
+                        className={paymentType === 'monthly' ? selectedStyling : unselectedStyling}
                     >
                         <h1 className='text-[20px]'>Monthly</h1>
                     </button>
                 </div>
+
+                <div className='flex flex-col items-center'>
+                    <p className='text-[#323232] text-[18px]'>
+                        Choose your 
+                        <span className='font-bold'> {paymentType} </span> 
+                        donation amount
+                    </p>
+                    <div className='flex'>
+                        <div 
+                            onClick={() => setDonationAmount(25)} 
+                            className={amountBtnStyling}
+                        >
+                            <p className='font-bold text-[#630A0E] text-[20px]'>$25</p>
+                        </div>
+                        <div 
+                            onClick={() => setDonationAmount(50)} 
+                            className={amountBtnStyling}
+                        >
+                            <p className='font-bold text-[#630A0E] text-[20px]'>$50</p>
+                        </div>
+                        <div 
+                            onClick={() => setDonationAmount(100)} 
+                            className={amountBtnStyling}
+                        >
+                            <p className='font-bold text-[#630A0E] text-[20px]'>$100</p>
+                        </div>
+                        <div 
+                            onClick={() => setDonationAmount(200)} 
+                            className={amountBtnStyling}
+                        >
+                            <p className='font-bold text-[#630A0E] text-[20px]'>$200</p>
+                        </div>
+                    </div>
+                </div>
+
+                
 
             </div>
         </div>

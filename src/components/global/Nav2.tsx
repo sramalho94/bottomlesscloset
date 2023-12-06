@@ -107,8 +107,8 @@ function Nav2() {
         </ul>
       </div>
       <div>
-        <a className="btn ml-5 mr-3 hidden md:flex">GET JOB HELP</a>
-        <a className="btn mr-3 hidden md:flex">DONATE</a>
+        <a className="btn ml-5 mr-3 hidden md:flex bg-dark-red ">GET JOB HELP</a>
+        <a className="btn mr-3 hidden md:flex bg-green">DONATE</a>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg

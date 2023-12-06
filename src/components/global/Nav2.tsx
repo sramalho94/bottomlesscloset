@@ -7,41 +7,24 @@ const navs: navElement[] = [
   {
     title: "About Us",
     subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
       "Financials",
+      "Our Initiatives",
+      "History & Mission",
+      "Staff & Board of Directors",
+      "Contact Info",
     ],
   },
   {
-    title: "Contact",
-    subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
-      "Financials",
-    ],
+    title: "Our Impact",
+    subheaders: ["Annual Reports", "Success Stories"],
   },
   {
-    title: "About Us",
+    title: "Get Involved",
     subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
-      "Financials",
-    ],
-  },
-  {
-    title: "Contact",
-    subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
-      "Financials",
+      "Donate",
+      "Give Clothing",
+      "Volunteer",
+      "Corporate Partnership",
     ],
   },
 ];
@@ -51,7 +34,7 @@ const NavigationMobile = ({ navs }: navsProp) => {
     <>
       {navs.map(({ title, subheaders }, index) => (
         <li key={index}>
-          <a>{title}</a>
+          <a >{title}</a>
           <ul className="p-2">
             {subheaders.map((subheader, subIndex) => (
               <li key={subIndex}>
@@ -69,13 +52,13 @@ const NavigationDesktop = ({ navs }: navsProp) => {
   return (
     <>
       {navs.map(({ title, subheaders }, index) => (
-        <li key={index}>
+        <li key={index} className="text-xl ">
           <details>
-            <summary>{title}</summary>
-            <ul className="p-2">
+            <summary className="hover:underline underline-offset-4 transition decoration-core-red">{title}</summary>
+            <ul className="p-2 rounded-none">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
-                  <a>{subheader}</a>
+                  <a className="text-md">{subheader}</a>
                 </li>
               ))}
             </ul>
@@ -93,10 +76,10 @@ const NavigationDesktop = ({ navs }: navsProp) => {
 
 function Nav2() {
   return (
-    <div className="navbar bg-base-100 justify-between">
+    <div className="navbar bg-base-100 justify-between p-0">
       <Image
         src="./logo.svg"
-        width={180}
+        width={200}
         height={20}
         alt="Bottomless Logo"></Image>
       {/* <div className="navbar-start"> */}
@@ -104,11 +87,18 @@ function Nav2() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <NavigationDesktop navs={navs} />
+          <li className="text-xl">
+            <a>Workshops</a>
+          </li>
         </ul>
       </div>
       <div>
-        <a className="btn ml-5 mr-3 hidden md:flex bg-dark-red ">GET JOB HELP</a>
-        <a className="btn mr-3 hidden md:flex bg-green">DONATE</a>
+        <a className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red ">
+          CAREER HELP
+        </a>
+        <a className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700">
+          DONATE
+        </a>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -129,8 +119,15 @@ function Nav2() {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-1">
             <NavigationMobile navs={navs} />
-            <a className="btn mt-5">GET JOB HELP</a>
-            <a className="btn mt-3">DONATE</a>
+            <li>
+              <a>Workshops</a>
+            </li>
+            <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red">
+              CAREER HELP
+            </a>
+            <a className="btn mt-3 text-white bg-dark-green rounded-2xl hover:bg-emerald-400">
+              DONATE
+            </a>
           </ul>
         </div>
       </div>

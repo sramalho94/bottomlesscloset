@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import GetInvolvedBtn from './btns/GetInvolvedBtn';
 
 function GetInvolvedSection() {
     return (
@@ -20,6 +22,8 @@ function GetInvolvedSection() {
                     </p>
                 </div>
             </div>
+
+            <GetInvolvedBtn />
 
         </div>
     )

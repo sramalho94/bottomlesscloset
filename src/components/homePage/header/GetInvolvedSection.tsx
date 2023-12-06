@@ -1,6 +1,6 @@
 import React from 'react';
 
-import GetInvolvedBtn from './btns/GetInvolvedBtn';
+import GetInvolvedBtn from '../btns/GetInvolvedBtn';
 import LadyGetInvolved from './LadyGetInvolved';
 
 function GetInvolvedSection() {

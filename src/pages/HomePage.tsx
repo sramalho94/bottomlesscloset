@@ -1,14 +1,13 @@
 import React from 'react';
 
-import HomeBackgroundImage from '../components/homePage/HomeBackgroundImage';
-import GetInvolvedSection from '../components/homePage/GetInvolvedSection';
+import Header from '../components/homePage/header/Header';
 
 function HomePage() {
     return (
-        <div >
-            <HomeBackgroundImage />
+        <div>
+            <Header />
 
-            <GetInvolvedSection />
+
         </div>
     )
 }

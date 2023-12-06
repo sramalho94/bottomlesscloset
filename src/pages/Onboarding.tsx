@@ -27,6 +27,8 @@ function Onboarding() {
     "Finish",
   ];
 
+
+
   const displayStep = (step) => {
     switch (step) {
       case 1:

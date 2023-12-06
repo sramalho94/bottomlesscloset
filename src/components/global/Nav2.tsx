@@ -7,42 +7,32 @@ const navs: navElement[] = [
   {
     title: "About Us",
     subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
       "Financials",
+      "Our Initiatives",
+      "History & Mission",
+      "Staff & Board of Directors",
+      "Contact Info",
     ],
   },
   {
-    title: "Contact",
+    title: "Our Impact",
     subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
       "Annual Reports",
-      "Financials",
+      "Success Stories",
     ],
   },
   {
-    title: "About Us",
+    title: "Get Involved",
     subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
-      "Financials",
+      "Donate",
+      "Give Clothing",
+      "Volunteer",
+      "Corporate Partnership",
     ],
   },
   {
-    title: "Contact",
-    subheaders: [
-      "History & Mission",
-      "Staff",
-      "Board of Directors",
-      "Annual Reports",
-      "Financials",
-    ],
+    title: "Workshops",
+    subheaders: [],
   },
 ];
 

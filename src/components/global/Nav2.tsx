@@ -58,7 +58,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
             <ul className="p-2 rounded-none">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
-                  <a className="text-md">{subheader}</a>
+                  <a className="text-md hover:underline underline-offset-4 transition decoration-core-red">{subheader}</a>
                 </li>
               ))}
             </ul>

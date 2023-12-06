@@ -7,4 +7,7 @@ export interface PropsForComponentWithProps {
 export interface PropsForDonateModal {
   handleSubmit?: any
 }
+export interface PropsForDonateStep {
+    setDonationStep?: any
+}
 // <ComponentWithProps headerImage={['./image1.svg','./image2.svg']} altText={null} />

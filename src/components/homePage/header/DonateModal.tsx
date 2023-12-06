@@ -71,7 +71,15 @@ const DonateModal = () => {
                     </div>
                 </div>
 
-                
+                <div className='w-[365px]'>
+                    <p className='text-[#323232] text-[14px]'>Custom Donation Amount</p>
+                    <input 
+                        className='text-black text-[20px] p-[5px] w-[100%] h-[50px] border border-[#8692A6] rounded-[6px]'
+                        type='number' 
+                        value={donationAmount} 
+                        onChange={(e) => setDonationAmount(Number(e.target.value))}
+                    />
+                </div>
 
             </div>
         </div>

@@ -6,13 +6,15 @@ import DonateModal from './DonateModal';
 
 function Header() {
     return (
-        <div className="relative">
-            <HomeBackgroundImage />
+        <div>
+            <div className="relative flex flex-col items-center">
+                <HomeBackgroundImage />
+                <DonateModal />
+            </div>
 
             <GetInvolvedSection />
-            <div>
-                {/* <DonateModal /> */}
-            </div>
+            {/* <div>
+            </div> */}
         </div>
     )
 }

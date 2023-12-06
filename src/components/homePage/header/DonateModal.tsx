@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
+import SubmitDonationBtn from '../btns/SubmitDonationBtn';
+
 const DonateModal = () => {
 
     const [paymentType, setPaymentType] = useState('one-time');
@@ -11,6 +13,9 @@ const DonateModal = () => {
     const unselectedStyling = " text-[#630A0E] flex justify-center items-center w-[50%]";
     const amountBtnStyling = 'flex items-center justify-center w-[88px] h-[59px] bg-[#FFDAD6] rounded-[20px] m-[2.5px]';
 
+    const handleSubmit = () => {
+        console.log('Submitted ' + donationAmount)
+    }
 
     return (
         <div className="w-screen h-[475px] md:w-[470px] md:h-[575px] lg:mr-[10px] lg:absolute lg:bottom-[0] lg:right-[0px] lg:z-[2] lg:pt-[287px] xl:mr-[100px]">
@@ -80,6 +85,9 @@ const DonateModal = () => {
                         onChange={(e) => setDonationAmount(Number(e.target.value))}
                     />
                 </div>
+
+                <SubmitDonationBtn handleSubmit={handleSubmit}/>
+                {/* <SubmitDonationBtn handleSubmit={handleSubmit} /> */}
 
             </div>
         </div>

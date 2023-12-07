@@ -19,7 +19,7 @@ function Card({ title, body }: PropsForHelpCards) {
                     src="./arrow-right.svg"
                     width={25}
                     height={20}
-                    alt="Bottomless Logo"
+                    alt="Arrow pointing right"
                 />
             </div>
         </div>

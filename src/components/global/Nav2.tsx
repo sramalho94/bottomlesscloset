@@ -57,7 +57,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
             <summary className="hover:underline underline-offset-4 transition decoration-core-red text-black">
               {title}
             </summary>
-            <ul className="p-2 rounded-none bg-white ">
+            <ul className="p-2 rounded-none bg-white z-10">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
                   <a className="text-md hover:underline underline-offset-4 transition decoration-core-red text-black">
@@ -80,7 +80,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
 
 function Nav2() {
   return (
-    <div className="navbar bg-base-100 justify-between p-0 bg-white">
+    <div className="navbar bg-base-100 justify-between p-0 bg-white z-50">
       <Image
         src="./logo.svg"
         width={200}

@@ -7,8 +7,8 @@ import { Montserrat, Open_Sans } from "@next/font/google";
 import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"] })
-const openSans = Open_Sans({ subsets: ["latin"] })
+const montserrat = Montserrat({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={montserrat.className}>
+    <html lang="en" >
+      <body className="fonts-mont min-h-screen flex flex-col justify-between">
         {" "}
         {/* <Nav /> */}
-        <Nav2 />
+          <Nav2 />
         {children}
         <Footer />
       </body>

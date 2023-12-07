@@ -9,7 +9,7 @@ function Referrals() {
   //   setUserData({ ...userData, [name]: value });
   // };
   return (
-    <div>
+    <div className="">
       <div className=" font-bold">Referrals</div>
       <div className="text-core-red">
         If referred, enter below; otherwise, feel free to skip.{" "}

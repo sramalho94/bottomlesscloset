@@ -10,18 +10,25 @@ function Finish() {
   //   setUserData({ ...userData, [name]: value });
   // };
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Thank you for signing up!</h1>
-          <p className="py-6">
-            We&apos;re here to support you on your journey. Keep an eye on your
-            email, as we&apos;ll be sending a confirmation shortly. Let&apos;s work
-            together toward your success!
-          </p>
-        </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <Image src="./woman.svg" width={20} height={20} alt="" />
+    <div >
+      <div className="text-center text-xl font-bold md:text-4xl">
+        Welcome to a Wardrobe of Opportunities at Bottomless Closet!
+      </div>
+      <div className="hero pt-0">
+        <div className="hero-content flex-col lg:flex-row-reverse pt-2">
+          <div className="text-center lg:text-left pt-2">
+            <h1 className="text-xl m-0 p-0 font-bold">
+              Thank you for signing up!
+            </h1>
+            <p className="py-6">
+              We&apos;re here to support you on your journey. Keep an eye on
+              your email, as we&apos;ll be sending a confirmation shortly.
+              Let&apos;s work together toward your success!
+            </p>
+          </div>
+          <div className="card shrink-0 max-w-sm shadow-2xl bg-base-100">
+            <Image src="./woman.svg" width={400} height={200} alt="" />
+          </div>
         </div>
       </div>
     </div>

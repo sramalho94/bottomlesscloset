@@ -15,12 +15,11 @@
     border: 5px solid #B0121A;
     border-radius: 30px;
     width: 17rem;
-    transition: border-radius 1s ease-in-out; /* Transition for the border property */
-    transition: border 1s ease-in-out; /* Transition for the border property */
-    transition: width 1s ease-in-out; /* Transition for the border property */
+    /* transition: border .2s ease-in-out;
+    transition: width .2s ease-in-out;  */
   }
 
   [type=radio] + img {
 
-    transition: border 01s ease-in-out, border-radius 0.3s ease-in-out, width 0.3s ease-in-out;
+    /* transition: border 0.2s ease-in-out, border-radius 0.3s ease-in-out, width 0.3s ease-in-out; */
   }

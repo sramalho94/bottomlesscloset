@@ -3,6 +3,7 @@ import React from 'react'
 import HelpCards from './helpCards/HelpCards'
 import HiredImage from './HiredImage'
 import BlobImage from './BlobImage'
+import Stats from './Stats'
 
 function HowWeHelp() {
     return (
@@ -15,6 +16,8 @@ function HowWeHelp() {
                 <HelpCards />
 
                 <HiredImage />
+
+                <Stats />
 
             </div>
         </div>

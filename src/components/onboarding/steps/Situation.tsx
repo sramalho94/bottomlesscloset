@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext } from "react";
+import "./Situation.css";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Situation() {
@@ -10,52 +11,44 @@ function Situation() {
   // };
   return (
     <div className="flex flex-col">
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Low Income</span>
-          <input type="checkbox" className="checkbox" />
-        </label>
+      <div className=" font-bold">
+        What part of New York City do you live in?
       </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">High Living Costs</span>
-          <input type="checkbox" className="checkbox" />
-        </label>
+      <div className="text-core-red">
+        We currently only serve the 5 boroughs of New York City.{" "}
       </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Unemployment</span>
-          <input type="checkbox" className="checkbox" />
+      <div id="checkboxes" className="pt-5 flex flex-wrap gap-4 justify-center">
+        <input type="checkbox" name="rGroup" value="1" id="r1" />
+        <label className="whatever" htmlFor="r1">
+          Low Income
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Family Size</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="2" id="r2" />
+        <label className="whatever" htmlFor="r2">
+          High Living Costs
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Healthcare Expenses</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="3" id="r3" />
+        <label className="whatever" htmlFor="r3">
+          Unemployment
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Underemployment</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="1" id="r4" />
+        <label className="whatever" htmlFor="r4">
+          Family Size
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Housing Instability</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="2" id="r5" />
+        <label className="whatever" htmlFor="r5">
+          Family Size
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Debt Burden</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="3" id="r6" />
+        <label className="whatever" htmlFor="r6">
+          Healthcare Expenses
+        </label>
+        <input type="checkbox" name="rGroup" value="3" id="r7" />
+        <label className="whatever" htmlFor="r7">
+          Housing Instability
+        </label>
+        <input type="checkbox" name="rGroup" value="3" id="r8" />
+        <label className="whatever" htmlFor="r8">
+          Debt Burden
         </label>
       </div>
     </div>

@@ -1,5 +1,5 @@
-import React from 'react'
-import { useContext } from 'react'
+import React from "react";
+import { useContext } from "react";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Situation() {
@@ -10,27 +10,26 @@ function Situation() {
   // };
   return (
     <div className="flex flex-col">
-      How can we assist with your career goals?
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Professional Clothes</span>
-          <input type="checkbox" className="checkbox" />
-        </label>
+      <div className=" font-bold">
+        How can we assist you with your career goals?
       </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Resume Help</span>
-          <input type="checkbox" className="checkbox" />
+      <div className="text-core-red">Select all that apply </div>
+      <div id="checkboxes" className="pt-5 flex flex-wrap gap-4 justify-center">
+        <input type="checkbox" name="rGroup" value="1" id="r1" />
+        <label className="whatever" htmlFor="r1">
+          Professional Clothes
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Interview Help</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="2" id="r2" />
+        <label className="whatever" htmlFor="r2">
+          Resume Help{" "}
+        </label>
+        <input type="checkbox" name="rGroup" value="3" id="r3" />
+        <label className="whatever" htmlFor="r3">
+          Interview Help{" "}
         </label>
       </div>
     </div>
-  )
+  );
 }
 
-export default Situation
+export default Situation;

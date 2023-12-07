@@ -10,4 +10,19 @@ export interface PropsForDonateModal {
 export interface PropsForDonateStep {
     setDonationStep?: any
 }
+
 // <ComponentWithProps headerImage={['./image1.svg','./image2.svg']} altText={null} />
+
+export interface navElement {
+  title: string
+  subheaders: string[]
+}
+export interface navsProp {
+  navs: navElement[]
+}
+
+export interface stepperControlProps {
+  handleClick: (direction: 'back' | 'next') => void
+  currentStep: number
+  steps: string[]
+}

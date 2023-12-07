@@ -1,58 +1,56 @@
-"use client";
+'use client'
 
-import React from "react";
-import { useState } from "react";
+import React from 'react'
+import { useState } from 'react'
 // import { OnboardingState } from "@/contexts/OnboardingContext";
-import Stepper from "@/components/onboarding/Stepper";
-import StepperControl from "@/components/onboarding/StepperControl";
-import Borough from "@/components/onboarding/steps/Borough";
-import Situation from "@/components/onboarding/steps/Situation";
-import Details from "@/components/onboarding/steps/Details";
-import Goals from "@/components/onboarding/steps/Goals";
-import Referrals from "@/components/onboarding/steps/Referrals";
-import Attire from "@/components/onboarding/steps/Attire";
-import Finish from "@/components/onboarding/steps/Finish";
+import Stepper from '@/components/onboarding/Stepper'
+import StepperControl from '@/components/onboarding/StepperControl'
+import Borough from '@/components/onboarding/steps/Borough'
+import Situation from '@/components/onboarding/steps/Situation'
+import Details from '@/components/onboarding/steps/Details'
+import Goals from '@/components/onboarding/steps/Goals'
+import Referrals from '@/components/onboarding/steps/Referrals'
+import Attire from '@/components/onboarding/steps/Attire'
+import Finish from '@/components/onboarding/steps/Finish'
 
 function Onboarding() {
-  const [currentStep, setCurrentStep] = useState(1);
-  const [userData, setUserData] = useState("");
-  const [finalData, setFinalData] = useState("");
+  const [currentStep, setCurrentStep] = useState(1)
+  const [userData, setUserData] = useState('')
+  const [finalData, setFinalData] = useState('')
   const steps = [
-    "Borough",
-    "Situation",
-    "Details",
-    "Referrals",
-    "Goals",
-    "Attire",
-    "Finish",
-  ];
+    'Borough',
+    'Situation',
+    'Details',
+    'Referrals',
+    'Goals',
+    'Attire',
+    'Finish'
+  ]
 
-
-
-  const displayStep = (step) => {
+  const displayStep = (step: number) => {
     switch (step) {
       case 1:
-        return <Borough />;
+        return <Borough />
       case 2:
-        return <Situation />;
+        return <Situation />
       case 3:
-        return <Details />;
+        return <Details />
       case 4:
-        return <Referrals />;
+        return <Referrals />
       case 5:
-        return <Goals />;
+        return <Goals />
       case 6:
-        return <Attire />;
+        return <Attire />
       case 7:
-        return <Finish />;
+        return <Finish />
     }
-  };
+  }
 
-  const handleClick = (direction) => {
-    let newStep = currentStep;
-    direction === "next" ? newStep++ : newStep--;
-    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
-  };
+  const handleClick = (direction: string) => {
+    let newStep = currentStep
+    direction === 'next' ? newStep++ : newStep--
+    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep)
+  }
 
   return (
     <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-white">
@@ -62,8 +60,8 @@ function Onboarding() {
 
         <div className="my-10 p-10">
           {/* <OnboardingState.Provider */}
-            {/* value={{ userData, setUserData, finalData, setFinalData }} */}
-            {displayStep(currentStep)}
+          {/* value={{ userData, setUserData, finalData, setFinalData }} */}
+          {displayStep(currentStep)}
           {/* </OnboardingState.Provider> */}
         </div>
       </div>
@@ -77,7 +75,7 @@ function Onboarding() {
         />
       )}
     </div>
-  );
+  )
 }
 
-export default Onboarding;
+export default Onboarding

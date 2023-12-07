@@ -4,17 +4,17 @@ import { PropsForDonateStep } from '@/types/types'
 
 import SubmitDonationBtn from '../../btns/SubmitDonationBtn';
 
-function CreditCardStep({ setDonationStep }: PropsForDonateStep) {
+interface PropsForCreditCardStep{
+    handleSubmit: (donationData: number) => void;
+}
+
+function CreditCardStep({ handleSubmit }: PropsForCreditCardStep) {
 
     const [cardNumber, setCardNumber] = useState('')
     const [expirationDate, setExpirationDate] = useState('')
     const [CVV, setCVV] = useState('')
     const [zipCode, setZipCode] = useState('')
 
-    const handleSubmit = () => {
-        console.log('Submitted ')
-        setDonationStep(5)
-    }
     return (
         <div className="flex flex-col justify-between h-[100%] w-[368px]">
 

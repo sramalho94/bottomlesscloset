@@ -5,12 +5,27 @@ import { PropsForDonateStep } from '@/types/types'
 
 import SubmitDonationBtn from '../../btns/SubmitDonationBtn';
 
-function CustomizationStep({ setDonationStep }: PropsForDonateStep) {
+interface PropsForCustomStep{
+    setDonationStep: (step: number) => void;
+    honoreeName: string
+    setHonoreeName: (name: string) => void;
+    comment: string
+    setComment: (comment: string) => void;
+    organizationName: string
+    setOrganizationName: (orgName: string) => void;
+}
+
+function CustomizationStep({ 
+    setDonationStep,
+    honoreeName,
+    setHonoreeName,
+    comment,
+    setComment,
+    organizationName,
+    setOrganizationName
+}: PropsForCustomStep) {
 
     const [expand, setExpand] = useState(0);
-    const [honoreeName, setHonoreeName] = useState('');
-    const [comment, setComment] = useState('');
-    const [organizationName, setOrganizationName] = useState('');
 
     const handleSubmit = () => {
         console.log('Submitted ')

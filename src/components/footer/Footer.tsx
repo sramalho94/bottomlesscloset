@@ -97,27 +97,27 @@ const Footer: React.FC = () => {
             <Link href={""} className="link link-hover">News & Events</Link>
           </div>
           <div className="flex flex-col ">
-            <div className="mt-4">
+            <div className="mt-2 md:mt-3">
               <span className="text-neutral-50 text-sm md:text-lg font-bold font-mont">
                 Stay Informed
                 <br />
               </span>
-              <p className="text-neutral-50 text-xs md:text-sm font-normal font-osans mt-1   ">
+              <p className="text-neutral-50 text-[10px] md:text-sm font-normal font-osans mt-1">
                 Join our email newsletter to stay up to date on the latest news
                 and events!
               </p>
             </div>
-            <div className="py-2">
-              <span className="text-neutral-50 text-xs md:text-sm font-normal font-osans leading-tight">
+            <div className="py-1 md:py-2">
+              <span className="text-neutral-50 text-[10px] md:text-sm font-normal font-osans leading-tight">
                 Email:
               </span>
-              <div className="flex flex-row gap-1 pt-2">
+              <div className="flex md:flex-row flex-col gap-1 pt-1 md:pt-2">
                 <input
                   type="text"
                     placeholder="potus1234@yahoo.com"
-                  className=" bg-neutral-50 rounded-md border lg:w-[65%] w-[65%] border-neutral-50 inline-flex pl-1 text-[10px] md:text-xs font-normal font-osans"
+                  className=" bg-neutral-50 rounded-md border lg:w-[65%] md:w-[65%] border-neutral-50 inline-flex pl-1 text-[10px] md:text-xs font-normal font-osans"
                 />
-                <button className=" bg-rose-200 rounded-md justify-center items-center flex text-rose-950 text-[10px] md:text-xs px-1 lg:px-4 h-[1.5rem] font-semibold font-osans ">
+                <button className=" bg-rose-200 rounded-md justify-center items-center flex text-rose-950 text-[10px] md:text-xs px-1 lg:px-4 md:h-[1.5rem] w-[55px] md:w-auto font-semibold font-osans">
                   Submit
                 </button>
               </div>
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="w-full border-2 border-rose-950 my-4 " />
         <div className="flex justify-between lg:gap-48 xl:gap-72 ">
-          <div className="text-neutral-50 md:text-sm text-xs font-normal font-osans">
+          <div className="text-neutral-50 md:text-sm text-[10px] font-normal font-osans">
             Bottomless Closet is a nonprofit 501(c)(3) organization; EIN/Tax ID
             number 13-4037622 <br />© 2023 Bottomless Closet. All rights
             reserved. Privacy Policy

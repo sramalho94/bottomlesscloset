@@ -10,7 +10,7 @@
       "timeWindow": "1:00 PM - 3:00 PM"
     },
     "description": "Join us for an interactive workshop on financial management and investment strategies. Learn key concepts to secure your financial future.",
-    "imageSrc": "/workshops/financial_management.jpg"
+    "imageSrc": "/workshops/eventcard/150bond.png"
   },
   {
     "title": "Career Development Seminar",
@@ -23,7 +23,7 @@
       "timeWindow": "2:00 PM - 4:00 PM"
     },
     "description": "Explore strategies for advancing your career in a competitive job market. Gain insights from industry experts and enhance your professional skills.",
-    "imageSrc": "/workshops/career_development.jpg"
+    "imageSrc": "/workshops/eventcard/mmlaufler.png"
   },
   {
     "title": "Entrepreneurship Workshop",
@@ -36,7 +36,7 @@
       "timeWindow": "10:00 AM - 12:00 PM"
     },
     "description": "Thinking about starting your own business? Join our entrepreneurship workshop to learn the essentials of business planning and management.",
-    "imageSrc": "/workshops/entrepreneurship.jpg"
+    "imageSrc": "/workshops/eventcard/goingplaces.png"
   },
   {
     "title": "Personal Finance Series",
@@ -62,7 +62,7 @@
       "timeWindow": "12:00 PM - 2:00 PM"
     },
     "description": "Enhance your leadership skills and become an effective leader. Our workshop covers communication, team building, and strategic decision-making.",
-    "imageSrc": "/workshops/leadership_development.jpg"
+    "imageSrc": "/workshops/eventcard/150bond.png"
   },
   {
     "title": "Tech Career Bootcamp",

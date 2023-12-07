@@ -4,10 +4,23 @@ import { PropsForDonateStep } from '@/types/types'
 
 import SubmitDonationBtn from '../../btns/SubmitDonationBtn';
 
-function InfoStep({ setDonationStep }: PropsForDonateStep) {
+interface PropsForInfoStep {
+    setDonationStep: any
+    paymentType: string
+    setPaymentType: any
+    donationAmount: number
+    setDonationAmount: any
+}
 
-    const [paymentType, setPaymentType] = useState('one-time');
-    const [donationAmount, setDonationAmount] = useState(0);
+function InfoStep({ 
+    setDonationStep, 
+    paymentType, 
+    setPaymentType, 
+    setDonationAmount, 
+    donationAmount
+}: PropsForInfoStep) {
+
+    
 
     const selectedStyling = "bg-[#630A0E] text-white rounded-[20px] flex justify-center items-center w-[50%]";
     const unselectedStyling = " text-[#630A0E] flex justify-center items-center w-[50%]";

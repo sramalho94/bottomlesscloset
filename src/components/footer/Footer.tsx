@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col ">
             <div className="mt-4">
-              <span className="text-neutral-50 text-base md:text-lg font-bold font-mont">
+              <span className="text-neutral-50 text-sm md:text-lg font-bold font-mont">
                 Stay Informed
                 <br />
               </span>

@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="w-full border-2 border-rose-950 my-4 " />
-        <div className="flex justify-between lg:gap-48">
+        <div className="flex justify-between lg:gap-48 xl:gap-72 ">
           <div className="text-neutral-50 md:text-sm text-xs font-normal font-osans">
             Bottomless Closet is a nonprofit 501(c)(3) organization; EIN/Tax ID
             number 13-4037622 <br />© 2023 Bottomless Closet. All rights

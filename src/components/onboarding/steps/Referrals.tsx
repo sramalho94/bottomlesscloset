@@ -10,8 +10,8 @@ function Referrals() {
   // };
   return (
     <div className="">
-      <div className=" font-bold">Referrals</div>
-      <div className="text-core-red">
+      <div className=" font-bold  text-xl text-center md:w-full w-3/4 mx-auto">Referrals</div>
+      <div className="text-core-red text-center text-m w-3/4 md:w-full mx-auto mt-2">
         If referred, enter below; otherwise, feel free to skip.{" "}
       </div>
       <br />
@@ -20,14 +20,14 @@ function Referrals() {
       <input
         type="text"
         placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
+        className="input input-bordered w-full max-w-xs bg-white"
       />
       <label className="form-control w-full max-w-xs">
         <div className="label">
-          <span className="label-text">Bottomless Closet Referral Partner</span>
+          <span className="label-text text-black">Bottomless Closet Referral Partner</span>
         </div>
-        <select className="select select-bordered">
-          <option disabled selected>
+        <select className="select select-bordered bg-white">
+          <option disabled selected >
             Pick one
           </option>
           <option>Option 1</option>

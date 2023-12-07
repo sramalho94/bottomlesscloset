@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import Image from "next/image";
 // import { OnboardingState } from "@/contexts/OnboardingContext";
 // import Stepper from '@/components/onboarding/Stepper'
 import StepperControl from "@/components/onboarding/StepperControl";
@@ -46,7 +47,7 @@ function Onboarding() {
   const displayStep = (step: number) => {
     switch (step) {
       case 1:
-        return <Borough handleChange={handleChange} />;
+        return <Borough />;
       case 2:
         return <Situation />;
       case 3:
@@ -69,19 +70,22 @@ function Onboarding() {
   };
 
   return (
-    <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-white">
+    <div
+      className={`md:w-3/4 mx-auto max-w-4xl rounded-xl mt-5 pb-2 bg-white mb-32  ${
+        currentStep === 7 ? "bg-local bg-contain bg-no-repeat lg:bg-center" : "shadow-xl border"
+      }`} style={currentStep === 7 ? { backgroundImage: 'url("/blob.svg")' } : {}}
+      >
       {/* // Stepper */}
-      <div className="container horizontal mt-5">
+      <div className="container horizontal mt-5 mb-10">
         {/* <Stepper steps={steps} currentStep={currentStep} /> */}
 
-        <div className="my-10 p-10">
+        <div className="px-3">
           {/* <OnboardingState.Provider */}
           {/* value={{ userData, setUserData, finalData, setFinalData }} */}
           {displayStep(currentStep)}
           {/* </OnboardingState.Provider> */}
         </div>
       </div>
-
       {/* // Nav Controls */}
       {currentStep !== steps.length && (
         <StepperControl

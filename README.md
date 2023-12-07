@@ -45,7 +45,7 @@ bun dev
 
 ---
 
-- Noor Dibout
+- Noor Dibou
 
   - github: Noordibou
 

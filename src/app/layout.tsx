@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={montserrat.className}>
+    <html lang="en" >
+      <body className="fonts-mont min-h-screen flex flex-col justify-between">
         {" "}
         {/* <Nav /> */}
           <Nav2 />

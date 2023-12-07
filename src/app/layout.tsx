@@ -6,8 +6,8 @@ import Nav2 from "@/components/global/Nav2";
 import { Montserrat, Open_Sans } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"] })
-const openSans = Open_Sans({ subsets: ["latin"] })
+const montserrat = Montserrat({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         {" "}
         {/* <Nav /> */}
-        <Nav2 />
+          <Nav2 />
         {children}
       </body>
     </html>

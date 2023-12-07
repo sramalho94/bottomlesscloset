@@ -38,7 +38,7 @@ function CustomizationStep({
                     <p className='text-black text-[20px]'>Dedicate my donation to...</p>
                     <div onClick={() => setExpand(expand === 1 ? 0 : 1)}>
                         <Image
-                            className='m-[5px]'
+                            className={`m-[5px] ${expand !== 1 && 'rotate-90'}`}
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
@@ -70,7 +70,7 @@ function CustomizationStep({
                     <p className='text-black text-[20px]'>Leave a comment</p>
                     <div onClick={() => setExpand(expand === 2 ? 0 : 2)}>
                         <Image
-                            className='m-[5px]'
+                            className={`m-[5px] ${expand !== 1 && 'rotate-90'}`}
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
@@ -101,7 +101,7 @@ function CustomizationStep({
                     <p className='text-black text-[20px]'>Organization donation match</p>
                     <div onClick={() => setExpand(expand === 3 ? 0 : 3)}>
                         <Image
-                            className='m-[5px]'
+                            className={`m-[5px] ${expand !== 1 && 'rotate-90'}`}
                             src="./arrow-down.svg"
                             width={19}
                             height={20}

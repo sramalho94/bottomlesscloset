@@ -8,7 +8,7 @@ export interface PropsForDonateModal {
   handleSubmit?: any
 }
 export interface PropsForDonateStep {
-    setDonationStep?: any
+  setDonationStep?: any
 }
 
 // <ComponentWithProps headerImage={['./image1.svg','./image2.svg']} altText={null} />
@@ -28,6 +28,16 @@ export interface stepperControlProps {
 }
 
 export interface PropsForHelpCards {
-    title: string
-    body: string
+  title: string
+  body: string
+}
+
+export interface DonationData {
+  donor_id: number
+  initiative_id: number
+  donationType: string
+  donationValue: string
+  inMemoriam: string
+  comment: string
+  orgMatchName: string
 }

@@ -81,19 +81,23 @@ const NavigationDesktop = ({ navs }: navsProp) => {
 
 function Nav2() {
   return (
-    <div className="navbar bg-base-100 justify-between p-0 bg-white z-50">
+    <div className="navbar bg-base-100 justify-between p-0 bg-white z-50 font-mont">
+      <Link href="/">
       <Image
         src="./logo.svg"
         width={200}
         height={20}
         alt="Bottomless Logo"></Image>
+        </Link>
       {/* <div className="navbar-start"> */}
       {/* </div> */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <NavigationDesktop navs={navs} />
           <li className="text-xl">
+            <Link legacyBehavior href="/workshops">
             <a className="text-black">Workshops</a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -127,9 +131,11 @@ function Nav2() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-1 bg-white">
             <NavigationMobile navs={navs} />
             <li>
+              <Link legacyBehavior href="/workshops">
               <a className="bg-white text-black">Workshops</a>
+              </Link>
             </li>
-            <Link legacyBehavior href="onboarding">
+            <Link legacyBehavior href="/onboarding">
             <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
               CAREER HELP
             </a>

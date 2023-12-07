@@ -1,6 +1,6 @@
-import React from "react";
-import { useContext } from "react";
-import { StepperContext } from "@/contexts/OnboardingContext";
+import React from 'react'
+import { useContext } from 'react'
+// import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Situation() {
   // const { userData, setUserData } = useContext(StepperContext);
@@ -49,7 +49,7 @@ function Situation() {
         </label>
       </div>
     </div>
-  );
+  )
 }
 
-export default Situation;
+export default Situation

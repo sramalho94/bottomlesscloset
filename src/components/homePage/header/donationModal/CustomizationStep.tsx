@@ -35,14 +35,15 @@ function CustomizationStep({
         <div className="flex flex-col justify-between h-[100%] w-[368px]">
             <div>
                 <div className={`flex justify-between items-start w-[364px] h-[43px] ${expand !== 1 && 'border-b-[1px]'} border-black mt-[20px]`}>
-                    <p className='text-black text-[20px]'>Decicate my donation to...</p>
+                    <p className='text-black text-[20px]'>Dedicate my donation to...</p>
                     <div onClick={() => setExpand(expand === 1 ? 0 : 1)}>
                         <Image
                             className='m-[5px]'
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
-                            alt="Bottomless Logo"
+                            alt="Shore more arrow button"
+                            aria-label='Shore more arrow button'
                         />
                     </div>
                 </div>
@@ -58,6 +59,7 @@ function CustomizationStep({
                                 value={honoreeName}
                                 placeholder='John Doe'
                                 onChange={(e) => setHonoreeName(e.target.value)}
+                                aria-label='Dedicate my donation to text input field'
                             />
                         </div>
                     </div>
@@ -72,7 +74,8 @@ function CustomizationStep({
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
-                            alt="Bottomless Logo"
+                            alt="Shore more arrow button"
+                            aria-label='Shore more arrow button'
                         />
                     </div>
                 </div>
@@ -88,6 +91,7 @@ function CustomizationStep({
                                 value={comment}
                                 placeholder='We love the bottomless closet and everything they do.'
                                 onChange={(e) => setComment(e.target.value)}
+                                aria-label='Leave a comment text input field'
                             />
                         </div>
                     </div>
@@ -101,7 +105,8 @@ function CustomizationStep({
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
-                            alt="Bottomless Logo"
+                            alt="Shore more arrow button"
+                            aria-label='Shore more arrow button'
                         />
                     </div>
                 </div>
@@ -117,6 +122,7 @@ function CustomizationStep({
                                 value={organizationName}
                                 placeholder='google'
                                 onChange={(e) => setOrganizationName(e.target.value)}
+                                aria-label='Organization donation match text input field'
                             />
                         </div>
                     </div>

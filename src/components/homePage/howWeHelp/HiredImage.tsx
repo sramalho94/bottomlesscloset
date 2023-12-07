@@ -9,6 +9,7 @@ function HiredImage() {
                 width={990}
                 height={20}
                 alt="hired"
+                aria-label='image of 4 women holding signs that say hired'
             />
         </div>
     )

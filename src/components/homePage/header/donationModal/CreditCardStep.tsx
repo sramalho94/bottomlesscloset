@@ -29,6 +29,7 @@ function CreditCardStep({ handleSubmit }: PropsForCreditCardStep) {
                             value={cardNumber}
                             placeholder='1234 5678 9012 3456'
                             onChange={(e) => setCardNumber(e.target.value)}
+                            aria-label='credit card number text input field'
                         />
                     </div>
                 </div>
@@ -43,6 +44,7 @@ function CreditCardStep({ handleSubmit }: PropsForCreditCardStep) {
                                 value={expirationDate}
                                 placeholder='01/29'
                                 onChange={(e) => setExpirationDate(e.target.value)}
+                                aria-label='card expiration date text input field'
                             />
                         </div>
                     </div>
@@ -55,6 +57,7 @@ function CreditCardStep({ handleSubmit }: PropsForCreditCardStep) {
                                 value={CVV}
                                 placeholder='123'
                                 onChange={(e) => setCVV(e.target.value)}
+                                aria-label='CVV text input field'
                             />
                         </div>
                     </div>
@@ -70,6 +73,7 @@ function CreditCardStep({ handleSubmit }: PropsForCreditCardStep) {
                                 value={zipCode}
                                 placeholder='10990'
                                 onChange={(e) => setZipCode(e.target.value)}
+                                aria-label='Zip code text input field'
                             />
                         </div>
                     </div>

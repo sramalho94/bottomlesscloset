@@ -15,6 +15,7 @@ function ConfirmationStep() {
                     width={100}
                     height={5}
                     alt="Big Checkmark"
+                    aria-label='Big checkmark'
                 />
                 <h1 className="font-bold text-black text-[24px] text-center mt-[20px]">
                     Thank you for your generous donation to Bottomless Closet!

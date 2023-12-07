@@ -12,5 +12,9 @@
   
   /* CHECKED STYLES */
   [type=radio]:checked + img {
-    border: 2px solid #B0121A;
+    border: 5px solid #B0121A;
+    border-radius: 30px;
+    width: 17rem;
+    transition: border 0.1s ease-in-out; /* Transition for the border property */
+    transition: width 0.1s ease-in-out; /* Transition for the border property */
   }

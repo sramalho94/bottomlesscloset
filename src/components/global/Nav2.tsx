@@ -33,9 +33,9 @@ const NavigationMobile = ({ navs }: navsProp) => {
   return (
     <>
       {navs.map(({ title, subheaders }, index) => (
-        <li key={index}>
-          <a >{title}</a>
-          <ul className="p-2">
+        <li key={index} className="">
+          <a className="text-black ">{title}</a>
+          <ul className="p-2 text-black ">
             {subheaders.map((subheader, subIndex) => (
               <li key={subIndex}>
                 <a>{subheader}</a>
@@ -54,11 +54,15 @@ const NavigationDesktop = ({ navs }: navsProp) => {
       {navs.map(({ title, subheaders }, index) => (
         <li key={index} className="text-xl ">
           <details>
-            <summary className="hover:underline underline-offset-4 transition decoration-core-red">{title}</summary>
-            <ul className="p-2 rounded-none">
+            <summary className="hover:underline underline-offset-4 transition decoration-core-red text-black">
+              {title}
+            </summary>
+            <ul className="p-2 rounded-none bg-white ">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
-                  <a className="text-md hover:underline underline-offset-4 transition decoration-core-red">{subheader}</a>
+                  <a className="text-md hover:underline underline-offset-4 transition decoration-core-red text-black">
+                    {subheader}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -76,7 +80,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
 
 function Nav2() {
   return (
-    <div className="navbar bg-base-100 justify-between p-0">
+    <div className="navbar bg-base-100 justify-between p-0 bg-white">
       <Image
         src="./logo.svg"
         width={200}
@@ -88,12 +92,12 @@ function Nav2() {
         <ul className="menu menu-horizontal px-1">
           <NavigationDesktop navs={navs} />
           <li className="text-xl">
-            <a>Workshops</a>
+            <a className="text-black">Workshops</a>
           </li>
         </ul>
       </div>
       <div>
-        <a className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red ">
+        <a className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
           CAREER HELP
         </a>
         <a className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700">
@@ -117,12 +121,12 @@ function Nav2() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-1">
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-1 bg-white">
             <NavigationMobile navs={navs} />
             <li>
-              <a>Workshops</a>
+              <a className="bg-white text-black">Workshops</a>
             </li>
-            <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red">
+            <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
               CAREER HELP
             </a>
             <a className="btn mt-3 text-white bg-dark-green rounded-2xl hover:bg-emerald-400">

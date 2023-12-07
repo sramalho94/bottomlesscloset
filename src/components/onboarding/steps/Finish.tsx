@@ -15,8 +15,8 @@ function Finish() {
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Thank you for signing up!</h1>
           <p className="py-6">
-            We're here to support you on your journey. Keep an eye on your
-            email, as we'll be sending a confirmation shortly. Let's work
+            We&apos;re here to support you on your journey. Keep an eye on your
+            email, as we&apos;ll be sending a confirmation shortly. Let&apos;s work
             together toward your success!
           </p>
         </div>

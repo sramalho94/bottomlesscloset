@@ -37,7 +37,7 @@ function InfoStep({ setDonationStep }: PropsForDonateStep) {
                 </div>
 
                 <div className='flex flex-col items-center'>
-                    <p className='text-[#323232] text-[18px]'>
+                    <p className='text-[#323232] text-[16px] mb-[5px]'>
                         Choose your
                         <span className='font-bold'> {paymentType} </span>
                         donation amount

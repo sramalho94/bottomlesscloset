@@ -22,7 +22,9 @@ function PaymentStep({ setDonationStep }: PropsForDonateStep) {
                     <span className='font-bold'> {paymentType} </span>
                     donation of
                 </p>
-                <h1 className='font-bold text-black text-[48px]'>$50</h1>
+                <h1 className='font-bold text-black text-[48px] [text-shadow:_0_4px_5px_rgb(0_0_0_/_40%)]'>
+                    $50
+                </h1>
                 <div className='flex justify-between items-center w-[85%] h-[20px]'>
                     <Image
                         src="./lock.svg"

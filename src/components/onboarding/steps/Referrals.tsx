@@ -10,7 +10,12 @@ function Referrals() {
   // };
   return (
     <div>
-      Referral?
+      <div className=" font-bold">Referrals</div>
+      <div className="text-core-red">
+        If referred, enter below; otherwise, feel free to skip.{" "}
+      </div>
+      <br />
+      Do you have a referral?
       <br />
       <input
         type="text"

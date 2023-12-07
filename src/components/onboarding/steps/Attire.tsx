@@ -1,5 +1,5 @@
-import React from 'react'
-import { useContext } from 'react'
+import React from "react";
+import { useContext } from "react";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Situation() {
@@ -11,45 +11,38 @@ function Situation() {
 
   return (
     <div className="flex flex-col">
-      How can we help with your interview attire?
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Blazer</span>
-          <input type="checkbox" className="checkbox" />
-        </label>
+      <div className=" font-bold">
+        How can we help with your interview attire?{" "}
       </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Dress Shirt</span>
-          <input type="checkbox" className="checkbox" />
+      <div className="text-core-red">Select items you might need </div>
+      <div id="checkboxes" className="pt-5 flex flex-wrap gap-4 justify-center">
+        <input type="checkbox" name="rGroup" value="1" id="r1" />
+        <label className="whatever" htmlFor="r1">
+          Blazer{" "}
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Slacks</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="2" id="r2" />
+        <label className="whatever" htmlFor="r2">
+          Dress Shirt
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Skirts</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="3" id="r3" />
+        <label className="whatever" htmlFor="r3">
+          Slacks
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Shoes</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="1" id="r4" />
+        <label className="whatever" htmlFor="r4">
+          Skirts{" "}
         </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <span className="label-text">Work Bags</span>
-          <input type="checkbox" className="checkbox" />
+        <input type="checkbox" name="rGroup" value="2" id="r5" />
+        <label className="whatever" htmlFor="r5">
+          Shoes{" "}
+        </label>
+        <input type="checkbox" name="rGroup" value="3" id="r6" />
+        <label className="whatever" htmlFor="r6">
+          Work Bags{" "}
         </label>
       </div>
     </div>
-  )
+  );
 }
 
-export default Situation
+export default Situation;

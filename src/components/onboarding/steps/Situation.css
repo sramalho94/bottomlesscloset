@@ -1,0 +1,21 @@
+.whatever {
+  background-color: white;
+  width: 15rem;
+  height: 5rem;
+  border: 5px #b0121a solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s ease-in-out; /* Transition for the border property */
+}
+
+#checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+#checkboxes input[type="checkbox"]:checked + .whatever {
+  background-color: #b0121a;
+  color: white;
+  transition: background-color 0.1s ease-in-out; /* Transition for the border property */
+}

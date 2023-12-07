@@ -1,5 +1,5 @@
-import React from 'react'
-import { useContext } from 'react'
+import React from "react";
+import { useContext } from "react";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Details() {
@@ -10,38 +10,55 @@ function Details() {
   // };
   return (
     <div>
-      Please Fill in some Details
-      <br />
-      First Name
-      <input
-        type="text"
-        placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
-      />
-      <br />
-      Last Name
-      <input
-        type="text"
-        placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
-      />
-      <br />
-      Email
-      <br />
-      <input
-        type="text"
-        placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
-      />
-      <br />
-      Phone Number
-      <input
-        type="text"
-        placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
-      />
+      <div className=" font-bold">Please fill in your details</div>
+      <div className="text-core-red">
+        We currently only serve the 5 boroughs of New York City.
+      </div>{" "}
+      <label className="form-control w-full max-w-xs">
+        <div className="label">
+          <span className="label-text">First Name</span>
+        </div>
+        <input
+          type="text"
+          placeholder="Type here"
+          className="input input-bordered w-full max-w-xs"
+        />
+      </label>
+      <label className="form-control w-full max-w-xs">
+        <div className="label">
+          <span className="label-text">Last Name</span>
+        </div>
+        <input
+          type="text"
+          placeholder="Type here"
+          className="input input-bordered w-full max-w-xs"
+        />
+      </label>
+      <div className="flex flex-col w-full border-opacity-50">
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Email</span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+        <div className="divider mb-0">OR</div>
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Phone</span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Details
+export default Details;

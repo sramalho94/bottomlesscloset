@@ -4,7 +4,7 @@ import Card from './Card'
 
 function HelpCards() {
     return (
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row ">
             <Card 
                 title="Dress for Success" 
                 body="Choose stylish work clothes, shoes, and accessories for a great first impression." 

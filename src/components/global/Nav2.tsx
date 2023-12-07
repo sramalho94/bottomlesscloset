@@ -33,9 +33,9 @@ const NavigationMobile = ({ navs }: navsProp) => {
   return (
     <>
       {navs.map(({ title, subheaders }, index) => (
-        <li key={index}>
-          <a >{title}</a>
-          <ul className="p-2">
+        <li key={index} className="bg-white">
+          <a className="text-black bg-white">{title}</a>
+          <ul className="p-2 text-black bg-white">
             {subheaders.map((subheader, subIndex) => (
               <li key={subIndex}>
                 <a>{subheader}</a>
@@ -54,11 +54,11 @@ const NavigationDesktop = ({ navs }: navsProp) => {
       {navs.map(({ title, subheaders }, index) => (
         <li key={index} className="text-xl ">
           <details>
-            <summary className="hover:underline underline-offset-4 transition decoration-core-red">{title}</summary>
+            <summary className="hover:underline underline-offset-4 transition decoration-core-red text-black">{title}</summary>
             <ul className="p-2 rounded-none bg-white ">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
-                  <a className="text-md hover:underline underline-offset-4 transition decoration-core-red">{subheader}</a>
+                  <a className="text-md hover:underline underline-offset-4 transition decoration-core-red text-black">{subheader}</a>
                 </li>
               ))}
             </ul>
@@ -122,7 +122,7 @@ function Nav2() {
             <li>
               <a>Workshops</a>
             </li>
-            <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red">
+            <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
               CAREER HELP
             </a>
             <a className="btn mt-3 text-white bg-dark-green rounded-2xl hover:bg-emerald-400">

@@ -1,12 +1,12 @@
-// import React, { useEffect, useState, useRef } from "react";
+// // import React, { useEffect, useState, useRef } from "react";
 
-// function Stepper({ steps, currentStep }) {
-//   const [newStep, setNewStep] = useState([]);
-//   const stepRef = useRef();
+// // function Stepper({ steps, currentStep }) {
+// //   const [newStep, setNewStep] = useState([]);
+// //   const stepRef = useRef();
 
-//   const updateStep = (stepNumber, steps) => {
-//     const newSteps = [...steps];
-//     let count = 0;
+// //   const updateStep = (stepNumber, steps) => {
+// //     const newSteps = [...steps];
+// //     let count = 0;
 
 //     while (count < newSteps.length) {
 //       if (count === stepNumber) {
@@ -93,13 +93,13 @@
 
 // export default Stepper;
 
-// // // <div className="relative flex flex-col items-center text-teal-600">
-// // // <div className="rounded-full transition duration-500 ease-in-out border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3">
-// // //   1
-// // // </div>{" "}
-// // // <div className="absolute top-0 text-center mt-16 w-32 text-xs font-medium uppercase">
-// // //   {/* Display Description */}
-// // //   Description
-// // // </div>
-// // // </div>
-// // // <div className="flex-auto border-t-2 transition duration-500 ease-in-out">{/* Display Line */}</div>
+// // // // <div className="relative flex flex-col items-center text-teal-600">
+// // // // <div className="rounded-full transition duration-500 ease-in-out border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3">
+// // // //   1
+// // // // </div>{" "}
+// // // // <div className="absolute top-0 text-center mt-16 w-32 text-xs font-medium uppercase">
+// // // //   {/* Display Description */}
+// // // //   Description
+// // // // </div>
+// // // // </div>
+// // // // <div className="flex-auto border-t-2 transition duration-500 ease-in-out">{/* Display Line */}</div>

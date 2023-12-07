@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { navElement } from "@/types/types";
 import { navsProp } from "@/types/types";
 
@@ -97,12 +98,14 @@ function Nav2() {
         </ul>
       </div>
       <div>
-        <a className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
+        <Link href="/onboarding">
+        <div className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
           CAREER HELP
-        </a>
-        <a className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700">
+        </div>
+        </Link>
+        <div className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700">
           DONATE
-        </a>
+        </div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -126,9 +129,11 @@ function Nav2() {
             <li>
               <a className="bg-white text-black">Workshops</a>
             </li>
+            <Link legacyBehavior href="onboarding">
             <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
               CAREER HELP
             </a>
+            </Link>
             <a className="btn mt-3 text-white bg-dark-green rounded-2xl hover:bg-emerald-400">
               DONATE
             </a>

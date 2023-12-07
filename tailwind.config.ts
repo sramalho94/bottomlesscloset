@@ -1,6 +1,9 @@
 import type { Config } from 'tailwindcss'
 import daisyui from "daisyui"
 
+
+
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,9 +18,14 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        "dark-red": "#B0121A",
-        "light-red": "#FFDAD6",
-        "green": "#085047"
+        'core-red': '#B0121A',
+        'dark-red': '#630A0E',
+        'pink-2': '#FFDAD6',
+        "salmon": '#FFB4AC',
+        'dark-green': '#085047',
+        'red-brick': '#8C0E14',
+        "charcoal": '#404040',
+        'light-gray': '#404040'
       }
     },
   },

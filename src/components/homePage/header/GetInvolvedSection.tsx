@@ -2,6 +2,9 @@ import React from 'react';
 
 import GetInvolvedBtn from '../btns/GetInvolvedBtn';
 import LadyGetInvolved from './LadyGetInvolved';
+import { Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 function GetInvolvedSection() {
     return (
@@ -10,14 +13,14 @@ function GetInvolvedSection() {
             <div className="w-[40%]">
                 <div>
                     <div>
-                        <p className='text-[20px] lg:text-[24px] text-black'>
+                        <p className={`${montserrat.className} text-[20px] lg:text-[24px] text-black`}>
                             “I feel stuck sometimes, but coming to Bottomless Closet reminds
                             me of how far I’ve come and the next step I can take. Coming here
                             makes me feel motivated and hopeful.”
                         </p>
                     </div>
                     <div className='flex justify-end'>
-                        <p className='text-black mr-[7%] text-[20px] lg:text-[24px]'>
+                        <p className={`${montserrat.className} text-black mr-[7%] text-[20px] lg:text-[24px]`}>
                             -
                             {/* TODO: Change text color to hex code when you have one */}
                             <span className='text-[#B0121A]'> Diana</span>

@@ -2,8 +2,9 @@ import React from 'react'
 
 function Stats() {
     return (
-        <div className="flex mt-[60px] mb-[60px] ">
-            <div className="flex ml-[35px] mr-[35px]">
+        <div className="flex flex-col lg:flex-row mt-[30px] mb-[60px] ">
+            <div className="flex m-[35px]">
+            {/* <div className="flex ml-[35px] mr-[35px]"> */}
                 <div className='h-[200px] border-l-[3px] border-salmon'>
 
                 </div>
@@ -15,7 +16,8 @@ function Stats() {
                 </div>
             </div>
 
-            <div className="flex ml-[35px] mr-[35px]">
+            <div className="flex m-[35px]">
+            {/* <div className="flex ml-[35px] mr-[35px]"> */}
                 <div className='h-[200px] border-l-[3px] border-dark-red'>
 
                 </div>
@@ -26,7 +28,8 @@ function Stats() {
                 </div>
             </div>
 
-            <div className="flex ml-[35px] mr-[35px]">
+            <div className="flex m-[35px]">
+            {/* <div className="flex ml-[35px] mr-[35px]"> */}
                 <div className='h-[200px] border-l-[3px] border-core-red'>
 
                 </div>

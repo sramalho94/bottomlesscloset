@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Financial Management Workshop",
+    "location": "Midtown Manhattan, NYC",
+    "datetime": {
+      "dayOfWeek": "Monday",
+      "month": "April",
+      "day": 10,
+      "year": 2023,
+      "timeWindow": "1:00 PM - 3:00 PM"
+    },
+    "description": "Join us for an interactive workshop on financial management and investment strategies. Learn key concepts to secure your financial future.",
+    "imageSrc": "/workshops/financial_management.jpg"
+  },
+  {
+    "title": "Career Development Seminar",
+    "location": "Downtown Brooklyn, NYC",
+    "datetime": {
+      "dayOfWeek": "Wednesday",
+      "month": "May",
+      "day": 15,
+      "year": 2023,
+      "timeWindow": "2:00 PM - 4:00 PM"
+    },
+    "description": "Explore strategies for advancing your career in a competitive job market. Gain insights from industry experts and enhance your professional skills.",
+    "imageSrc": "/workshops/career_development.jpg"
+  },
+  {
+    "title": "Entrepreneurship Workshop",
+    "location": "Harlem, NYC",
+    "datetime": {
+      "dayOfWeek": "Friday",
+      "month": "June",
+      "day": 23,
+      "year": 2023,
+      "timeWindow": "10:00 AM - 12:00 PM"
+    },
+    "description": "Thinking about starting your own business? Join our entrepreneurship workshop to learn the essentials of business planning and management.",
+    "imageSrc": "/workshops/entrepreneurship.jpg"
+  },
+  {
+    "title": "Personal Finance Series",
+    "location": "Queens, NYC",
+    "datetime": {
+      "dayOfWeek": "Tuesday",
+      "month": "July",
+      "day": 18,
+      "year": 2023,
+      "timeWindow": "3:00 PM - 5:00 PM"
+    },
+    "description": "Take control of your finances with our comprehensive personal finance series. Topics include budgeting, savings, and smart investment strategies.",
+    "imageSrc": "/workshops/personal_finance.jpg"
+  },
+  {
+    "title": "Leadership Development Workshop",
+    "location": "Upper West Side, NYC",
+    "datetime": {
+      "dayOfWeek": "Thursday",
+      "month": "August",
+      "day": 8,
+      "year": 2023,
+      "timeWindow": "12:00 PM - 2:00 PM"
+    },
+    "description": "Enhance your leadership skills and become an effective leader. Our workshop covers communication, team building, and strategic decision-making.",
+    "imageSrc": "/workshops/leadership_development.jpg"
+  },
+  {
+    "title": "Tech Career Bootcamp",
+    "location": "Financial District, NYC",
+    "datetime": {
+      "dayOfWeek": "Saturday",
+      "month": "September",
+      "day": 30,
+      "year": 2023,
+      "timeWindow": "11:00 AM - 1:00 PM"
+    },
+    "description": "Ready to kickstart your career in tech? Join our intensive bootcamp covering in-demand skills and networking opportunities with industry professionals.",
+    "imageSrc": "/workshops/tech_career_bootcamp.jpg"
+  }
+]

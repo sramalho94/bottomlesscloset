@@ -71,7 +71,7 @@ function Onboarding() {
 
   return (
     <div
-      className={`md:w-3/4 mx-auto max-w-4xl rounded-xl mt-5 pb-2 bg-white mb-32  ${
+      className={`md:w-3/4 mx-auto max-w-4xl rounded-xl mt-5 pb-2 bg-white mb-8 ${
         currentStep === 7 ? "bg-local bg-contain bg-no-repeat lg:bg-center" : "shadow-xl border"
       }`} style={currentStep === 7 ? { backgroundImage: 'url("/blob.svg")' } : {}}
       >

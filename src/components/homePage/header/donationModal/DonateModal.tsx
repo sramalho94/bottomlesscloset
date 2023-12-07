@@ -14,7 +14,7 @@ const DonateModal = () => {
     const [donationStep, setDonationStep] = useState(0);
 
     return (
-        <div className="w-screen h-[475px] md:w-[470px] md:h-[575px] lg:mr-[10px] lg:absolute lg:bottom-[0] lg:right-[0px] lg:z-[2] lg:pt-[287px] xl:mr-[100px]">
+        <div className="w-screen h-[475px] md:w-[470px] md:h-[575px] lg:mr-[10px] lg:absolute lg:bottom-[110px] lg:right-[0px] lg:z-[2] lg:pt-[287px] xl:mr-[100px]">
             <div className="flex flex-col items-center p-[20px] bg-white w-screen h-[475px] md:w-[470px] md:h-[575px] rounded-[40px] shadow-[rgba(50,50,93,0.5)_0px_18px_16px_-9px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
                 <Image
                     src="./modal-logo.svg"

@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/global/Nav";
 import Nav2 from "@/components/global/Nav2";
 import { Montserrat, Open_Sans } from "@next/font/google";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -26,6 +27,7 @@ export default function RootLayout({
         {/* <Nav /> */}
           <Nav2 />
         {children}
+        <Footer />
       </body>
     </html>
   );

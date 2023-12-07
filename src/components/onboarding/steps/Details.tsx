@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext } from "react";
+import "../../../app/globals.css";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Details() {
@@ -10,52 +11,81 @@ function Details() {
   // };
   return (
     <div>
-      <div className=" font-bold">Please fill in your details</div>
-      <div className="text-core-red">
+      <div className=" font-bold text-xl text-center md:w-full w-3/4 mx-auto">
+        Please fill in your details
+      </div>
+      <div className="text-core-red text-center text-m w-3/4 md:w-full mx-auto mt-2">
         We currently only serve the 5 boroughs of New York City.
       </div>{" "}
       <label className="form-control w-full max-w-xs">
         <div className="label">
-          <span className="label-text">First Name</span>
+          <span className="label-text text-black">First Name</span>
         </div>
         <input
           type="text"
           placeholder="Type here"
-          className="input input-bordered w-full max-w-xs"
+          className="input input-bordered w-full max-w-xs bg-white"
         />
       </label>
       <label className="form-control w-full max-w-xs">
         <div className="label">
-          <span className="label-text">Last Name</span>
+          <span className="label-text text-black">Last Name</span>
         </div>
         <input
           type="text"
           placeholder="Type here"
-          className="input input-bordered w-full max-w-xs"
+          className="input input-bordered w-full max-w-xs bg-white"
         />
       </label>
       <div className="flex flex-col w-full border-opacity-50">
-        <label className="form-control w-full max-w-xs">
-          <div className="label">
-            <span className="label-text">Email</span>
+        <div className="lg:hidden">
+          <label className="form-control w-full max-w-xs">
+            <div className="label">
+              <span className="label-text text-black">Email</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs bg-white"
+            />
+          </label>
+          <div className="divider mb-0">OR</div>
+          <label className="form-control w-full max-w-xs">
+            <div className="label">
+              <span className="label-text text-black">Phone</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs bg-white"
+            />
+          </label>
+        </div>
+        <div className="hidden lg:block">
+          <div className="flex w-full align-middle">
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text text-black">Email</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Type here"
+                className="input input-bordered w-full max-w-xs bg-white"
+              />
+            </label>
+            <div className="divider divider-horizontal relative top-5">OR</div>
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text text-black">Phone</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Type here"
+                className="input input-bordered w-full max-w-xs bg-white"
+              />
+            </label>
           </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
-          />
-        </label>
-        <div className="divider mb-0">OR</div>
-        <label className="form-control w-full max-w-xs">
-          <div className="label">
-            <span className="label-text">Phone</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
-          />
-        </label>
+        </div>
       </div>
     </div>
   );

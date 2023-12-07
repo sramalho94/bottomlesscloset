@@ -11,10 +11,10 @@ function Situation() {
 
   return (
     <div className="flex flex-col">
-      <div className=" font-bold">
+      <div className=" font-bold  text-xl text-center md:w-full w-3/4 mx-auto">
         How can we help with your interview attire?{" "}
       </div>
-      <div className="text-core-red">Select items you might need </div>
+      <div className="text-core-red text-center text-m w-3/4 md:w-full mx-auto mt-2">Select items you might need </div>
       <div id="checkboxes" className="pt-5 flex flex-wrap gap-4 justify-center">
         <input type="checkbox" name="rGroup" value="1" id="r1" />
         <label className="whatever" htmlFor="r1">

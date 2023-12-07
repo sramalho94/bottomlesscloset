@@ -11,10 +11,10 @@ function Situation() {
   // };
   return (
     <div className="flex flex-col">
-      <div className=" font-bold">
+      <div className=" font-bold text-xl text-center md:w-full w-3/4 mx-auto">
         What part of New York City do you live in?
       </div>
-      <div className="text-core-red">
+      <div className="text-core-red text-center text-m w-3/4 md:w-full mx-auto mt-2">
         We currently only serve the 5 boroughs of New York City.{" "}
       </div>
       <div id="checkboxes" className="pt-5 flex flex-wrap gap-4 justify-center">

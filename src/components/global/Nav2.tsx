@@ -81,7 +81,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
 
 function Nav2() {
   return (
-    <div className="navbar bg-base-100 justify-between p-0 bg-white z-50">
+    <div className="navbar bg-base-100 justify-between p-0 bg-white z-50 font-mont">
       <Image
         src="./logo.svg"
         width={200}

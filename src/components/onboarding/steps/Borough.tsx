@@ -15,7 +15,7 @@ function Borough() {
     <div className="flex flex-col">
       <div className=" font-bold">What part of New York City do you live in?</div>
       <div className="text-core-red">We currently only serve the 5 boroughs of New York City. </div>
-      <div className="mt-5 form-control flex flex-row flex-wrap justify-center">
+      <div className="mt-5 form-control flex flex-row flex-wrap justify-center mt-0">
         <label className="label cursor-pointer">
 
           <input

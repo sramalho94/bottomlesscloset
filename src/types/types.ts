@@ -14,3 +14,9 @@ export interface navElement {
 export interface navsProp {
   navs: navElement[]
 }
+
+export interface stepperControlProps {
+  handleClick: (direction: 'back' | 'next') => void
+  currentStep: number
+  steps: string[]
+}

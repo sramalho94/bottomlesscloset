@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 import daisyui from 'daisyui'
 
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,10 +19,10 @@ const config: Config = {
         'core-red': '#B0121A',
         'dark-red': '#630A0E',
         'pink-2': '#FFDAD6',
-        salmon: '#FFB4AC',
+        "salmon": '#FFB4AC',
         'dark-green': '#085047',
         'red-brick': '#8C0E14',
-        charcoal: '#404040',
+        "charcoal": '#404040',
         'light-gray': '#404040',
       },
     },

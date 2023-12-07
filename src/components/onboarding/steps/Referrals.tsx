@@ -22,6 +22,19 @@ function Referrals() {
         placeholder="Type here"
         className="input input-bordered w-full max-w-xs"
       />
+      <label className="form-control w-full max-w-xs">
+        <div className="label">
+          <span className="label-text">Bottomless Closet Referral Partner</span>
+        </div>
+        <select className="select select-bordered">
+          <option disabled selected>
+            Pick one
+          </option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </label>
     </div>
   );
 }

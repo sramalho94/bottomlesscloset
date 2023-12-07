@@ -15,12 +15,12 @@
     border: 5px solid #B0121A;
     border-radius: 30px;
     width: 17rem;
-    transition: border-radius 0.1s ease-in-out; /* Transition for the border property */
-    transition: border 0.1s ease-in-out; /* Transition for the border property */
-    transition: width 0.1s ease-in-out; /* Transition for the border property */
+    transition: border-radius 1s ease-in-out; /* Transition for the border property */
+    transition: border 1s ease-in-out; /* Transition for the border property */
+    transition: width 1s ease-in-out; /* Transition for the border property */
   }
 
   [type=radio] + img {
 
-    transition: border 0.3s ease-in-out, border-radius 0.3s ease-in-out, width 0.3s ease-in-out; /* Transition for border, border-radius, and width */
+    transition: border 01s ease-in-out, border-radius 0.3s ease-in-out, width 0.3s ease-in-out;
   }

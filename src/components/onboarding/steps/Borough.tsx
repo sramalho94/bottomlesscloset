@@ -21,7 +21,7 @@ function Borough() {
           <input
             type="radio"
             name="Borough"
-            checked
+            
           />
             <Image src="./boroughs/Manhattan.svg" alt="Option 1" width={250} height={250}/>
 
@@ -31,7 +31,7 @@ function Borough() {
           <input
             type="radio"
             name="Borough"
-            checked
+            
           />
             <Image src="./boroughs/Brooklyn.svg" alt="Option 1" width={250} height={250}/>
 
@@ -41,7 +41,7 @@ function Borough() {
           <input
             type="radio"
             name="Borough"
-            checked
+            
           />
             <Image src="./boroughs/Bronx.svg" alt="Option 1" width={250} height={250}/>
 
@@ -51,7 +51,7 @@ function Borough() {
           <input
             type="radio"
             name="Borough"
-            checked
+            
           />
             <Image src="./boroughs/StatenIsland.svg" alt="Option 1" width={250} height={250}/>
 
@@ -61,7 +61,7 @@ function Borough() {
           <input
             type="radio"
             name="Borough"
-            checked
+            
           />
             <Image src="./boroughs/Queens.svg" alt="Option 1" width={250} height={250}/>
 

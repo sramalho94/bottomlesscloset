@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <body className="fonts-mont min-h-screen flex flex-col justify-between">
+      <body className="fonts-mont min-h-screen max-w-screen flex flex-col justify-between">
         {" "}
         {/* <Nav /> */}
           <Nav2 />

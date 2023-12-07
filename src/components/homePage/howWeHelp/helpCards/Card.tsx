@@ -5,7 +5,7 @@ import { PropsForHelpCards } from '@/types/types'
 
 function Card({ title, body }: PropsForHelpCards) {
     return (
-        <div className="flex items-center pl-[40px] w-[350px] h-[355px] shadow-xl m-[25px] mb-[50px] rounded-[20px]">
+        <div className="flex items-center  bg-white pl-[40px] w-[350px] h-[355px] shadow-xl m-[25px] mb-[50px] rounded-[20px]">
             <div className="flex flex-col justify-between h-[280px]">
                 <div>
                     <h1 className="font-bold text-black text-[28px] mb-[30px]">

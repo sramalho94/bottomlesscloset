@@ -5,10 +5,13 @@ import { PropsForDonateStep } from '@/types/types'
 
 import SubmitDonationBtn from '../../btns/SubmitDonationBtn';
 
-function PaymentStep({ setDonationStep }: PropsForDonateStep) {
+interface PropsForCustomStep{
+    setDonationStep: (step: number) => void;
+    donationAmount: number
+    paymentType: string
+}
 
-    // TODO: get paymentType value from context
-    const [paymentType, setPaymentType] = useState('one-time')
+function PaymentStep({ setDonationStep, donationAmount, paymentType }: PropsForCustomStep) {
 
     const handleSubmit = () => {
         console.log('Submitted ')
@@ -23,7 +26,7 @@ function PaymentStep({ setDonationStep }: PropsForDonateStep) {
                     donation of
                 </p>
                 <h1 className='font-bold text-black text-[48px] [text-shadow:_0_4px_5px_rgb(0_0_0_/_40%)]'>
-                    $50
+                    ${donationAmount}
                 </h1>
                 <div className='flex justify-between items-center w-[85%] h-[20px]'>
                     <Image

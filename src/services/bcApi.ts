@@ -7,7 +7,7 @@ export const createDonation = async (
 ): Promise<DonationData> => {
   try {
     const response: AxiosResponse<DonationData> = await axios.post(
-      `${BASE_URL}/api/donations`,
+      `${BASE_URL}/api/donation`,
       donationData
     )
     return response.data

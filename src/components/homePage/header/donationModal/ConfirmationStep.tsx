@@ -5,11 +5,8 @@ import { PropsForDonateStep } from '@/types/types'
 
 import SubmitDonationBtn from '../../btns/SubmitDonationBtn';
 
-function ConfirmationStep({ setDonationStep }: PropsForDonateStep) {
-    const handleSubmit = () => {
-        console.log('Submitted ')
-        setDonationStep(0)
-    }
+function ConfirmationStep() {
+    
     return (
         <div className="flex flex-col justify-between items-center h-[100%] w-[368px]">
             <div className="flex flex-col items-center mt-[20px] w-[330px]">
@@ -27,8 +24,6 @@ function ConfirmationStep({ setDonationStep }: PropsForDonateStep) {
                 </h2>
             </div>
 
-
-            {/* <SubmitDonationBtn handleSubmit={handleSubmit} /> */}
         </div>
     )
 }

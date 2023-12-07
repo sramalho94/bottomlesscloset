@@ -1,7 +1,8 @@
 import React from 'react'
+import Workshops from '@/pages/Workshops'
 
-const Workshops = () => {
-  return <div>Workshops</div>
+function page() {
+  return <Workshops />
 }
 
-export default Workshops
+export default page

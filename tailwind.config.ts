@@ -1,12 +1,9 @@
 import type { Config } from 'tailwindcss'
-<<<<<<< HEAD
 import defaultTheme from 'tailwindcss/defaultTheme';
-=======
 import daisyui from "daisyui"
 
 
 
->>>>>>> upstream/dev
 
 const config: Config = {
   content: [

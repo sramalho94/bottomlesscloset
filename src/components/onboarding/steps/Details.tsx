@@ -1,6 +1,6 @@
-import React from "react";
-import { useContext } from "react";
-import { StepperContext } from "@/contexts/OnboardingContext";
+import React from 'react'
+import { useContext } from 'react'
+// import { StepperContext } from "@/contexts/OnboardingContext";
 
 function Details() {
   // const { userData, setUserData } = useContext(StepperContext);
@@ -41,7 +41,7 @@ function Details() {
         className="input input-bordered w-full max-w-xs"
       />
     </div>
-  );
+  )
 }
 
-export default Details;
+export default Details

@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Professional Development School with 150Bond  | In-person",
+    "location": "740 Broadway New York, NY (near Waverley Place)",
+    "datetime": {
+      "dayOfWeek": "Monday",
+      "month": "April",
+      "day": 10,
+      "year": 2023,
+      "timeWindow": "1:00 PM - 3:00 PM"
+    },
+    "description": "150Bond, is a team of story tellers. They are a team of former journalists, editors, founders, writers, and experienced communicators who work with companies and founders to tell their story, helping to shape the companies, stories, and innovations that will transform society.",
+    "imageSrc": "/workshops/eventcard/150bond.png"
+  },
+  {
+    "title": "Financial Management Series | Holiday Money Mindset | Virtual",
+    "location": "Virtual, Zoom Link",
+    "datetime": {
+      "dayOfWeek": "Wednesday",
+      "month": "May",
+      "day": 15,
+      "year": 2023,
+      "timeWindow": "2:00 PM - 4:00 PM"
+    },
+    "description": "Getting wrapped up in holiday spending? Get savvy with budgeting tips from Belinda Tsui, a Savvy Ladies Helpline Volunteer. Get tips on making your Holiday List and checking it twice and create your holiday money mindset and spend within your limits.",
+    "imageSrc": "/workshops/eventcard/goingplaces.png"
+  },
+  {
+    "title": "Professional Development School with MM. LAFLEUR | In-person",
+    "location": "1 West 34th street, 5th floor",
+    "datetime": {
+      "dayOfWeek": "Friday",
+      "month": "June",
+      "day": 23,
+      "year": 2023,
+      "timeWindow": "10:00 AM - 12:00 PM"
+    },
+    "description": "Join Keia Clarke - CEO of the Women’s National Basketball Association (WNBA) team NY Liberty and Sarah LaFleur CEO of clothing brand M.M. LaFleur for this intimate discussion of their professional journeys.",
+    "imageSrc": "/workshops/eventcard/mmlaufler.png"
+  },
+  {
+    "title": "Personal Finance Series | In-person",
+    "location": "Queens, NYC",
+    "datetime": {
+      "dayOfWeek": "Tuesday",
+      "month": "July",
+      "day": 18,
+      "year": 2023,
+      "timeWindow": "3:00 PM - 5:00 PM"
+    },
+    "description": "Take control of your finances with our comprehensive personal finance series. Topics include budgeting, savings, and smart investment strategies.",
+    "imageSrc": "/workshops/personal_finance.jpg"
+  },
+  {
+    "title": "Leadership Development Workshop | Virtual",
+    "location": "Upper West Side, NYC",
+    "datetime": {
+      "dayOfWeek": "Thursday",
+      "month": "August",
+      "day": 8,
+      "year": 2023,
+      "timeWindow": "12:00 PM - 2:00 PM"
+    },
+    "description": "Enhance your leadership skills and become an effective leader. Our workshop covers communication, team building, and strategic decision-making.",
+    "imageSrc": "/workshops/eventcard/150bond.png"
+  },
+  {
+    "title": "Tech Career Bootcamp | In-person",
+    "location": "Financial District, NYC",
+    "datetime": {
+      "dayOfWeek": "Saturday",
+      "month": "September",
+      "day": 30,
+      "year": 2023,
+      "timeWindow": "11:00 AM - 1:00 PM"
+    },
+    "description": "Ready to kickstart your career in tech? Join our intensive bootcamp covering in-demand skills and networking opportunities with industry professionals.",
+    "imageSrc": "/workshops/tech_career_bootcamp.jpg"
+  }
+]

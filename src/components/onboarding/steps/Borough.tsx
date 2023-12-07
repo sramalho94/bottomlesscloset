@@ -14,62 +14,58 @@ function Borough() {
   return (
     <div className="flex flex-col">
       What part of New York City do you live in?
-      <div className="form-control">
+      <div className="form-control flex flex-row flex-wrap justify-center">
         <label className="label cursor-pointer">
-          <span className="label-text">Manhattan</span>
+
           <input
             type="radio"
             name="Manhattan"
-            className="radio checked:bg-red-500"
             checked
           />
-            <Image src="https://via.placeholder.com/40x60/0bf/fff&text=A" alt="Option 1" width={50} height={50}/>
+            <Image src="./boroughs/Manhattan.svg" alt="Option 1" width={250} height={250}/>
 
         </label>
         <label className="label cursor-pointer">
-          <span className="label-text">Manhattan</span>
+
           <input
             type="radio"
             name="Manhattan"
-            className="radio checked:bg-red-500"
             checked
           />
-            <Image src="https://via.placeholder.com/40x60/0bf/fff&text=A" alt="Option 1" width={50} height={50}/>
+            <Image src="./boroughs/Manhattan.svg" alt="Option 1" width={250} height={250}/>
 
         </label>
         <label className="label cursor-pointer">
-          <span className="label-text">Manhattan</span>
+
           <input
             type="radio"
             name="Manhattan"
-            className="radio checked:bg-red-500"
             checked
           />
-            <Image src="https://via.placeholder.com/40x60/0bf/fff&text=A" alt="Option 1" width={50} height={50}/>
+            <Image src="./boroughs/Manhattan.svg" alt="Option 1" width={250} height={250}/>
 
         </label>
         <label className="label cursor-pointer">
-          <span className="label-text">Manhattan</span>
+
           <input
             type="radio"
             name="Manhattan"
-            className="radio checked:bg-red-500"
             checked
           />
-            <Image src="https://via.placeholder.com/40x60/0bf/fff&text=A" alt="Option 1" width={50} height={50}/>
+            <Image src="./boroughs/Manhattan.svg" alt="Option 1" width={250} height={250}/>
 
         </label>
         <label className="label cursor-pointer">
-          <span className="label-text">Manhattan</span>
+
           <input
             type="radio"
             name="Manhattan"
-            className="radio checked:bg-red-500"
             checked
           />
-            <Image src="https://via.placeholder.com/40x60/0bf/fff&text=A" alt="Option 1" width={50} height={50}/>
+            <Image src="./boroughs/Manhattan.svg" alt="Option 1" width={250} height={250}/>
 
         </label>
+        
       </div>
     </div>
   );

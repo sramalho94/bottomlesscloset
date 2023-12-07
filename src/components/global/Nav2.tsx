@@ -55,7 +55,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
         <li key={index} className="text-xl ">
           <details>
             <summary className="hover:underline underline-offset-4 transition decoration-core-red">{title}</summary>
-            <ul className="p-2 rounded-none">
+            <ul className="p-2 rounded-none bg-white ">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
                   <a className="text-md hover:underline underline-offset-4 transition decoration-core-red">{subheader}</a>
@@ -76,7 +76,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
 
 function Nav2() {
   return (
-    <div className="navbar bg-base-100 justify-between p-0">
+    <div className="navbar bg-base-100 justify-between p-0 bg-white">
       <Image
         src="./logo.svg"
         width={200}
@@ -93,7 +93,7 @@ function Nav2() {
         </ul>
       </div>
       <div>
-        <a className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red ">
+        <a className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
           CAREER HELP
         </a>
         <a className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700">

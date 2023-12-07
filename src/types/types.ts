@@ -26,3 +26,8 @@ export interface stepperControlProps {
   currentStep: number
   steps: string[]
 }
+
+export interface PropsForHelpCards {
+    title: string
+    body: string
+}

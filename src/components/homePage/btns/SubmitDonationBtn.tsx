@@ -8,7 +8,7 @@ function SubmitDonationBtn({handleSubmit}: PropsForDonateModal) {
             className="flex justify-center items-center bg-[#B0121A] w-[364px] h-[60px] rounded-[16px]"
             onClick={handleSubmit}
         >
-            <h1 className="text-[24px] font-bold">
+            <h1 className="text-[24px] font-bold text-white">
                 Continue
             </h1>
         </div>

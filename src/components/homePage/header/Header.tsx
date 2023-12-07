@@ -1,7 +1,6 @@
 import React from 'react';
 
 import HomeBackgroundImage from './HomeBackgroundImage';
-import GetInvolvedSection from './GetInvolvedSection';
 import DonateModal from './donationModal/DonateModal';
 
 function Header() {
@@ -12,9 +11,7 @@ function Header() {
                 <DonateModal />
             </div>
 
-            <GetInvolvedSection />
-            {/* <div>
-            </div> */}
+            
         </div>
     )
 }

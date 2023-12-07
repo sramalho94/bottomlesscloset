@@ -3,7 +3,7 @@
 import React from 'react'
 import { useState } from 'react'
 // import { OnboardingState } from "@/contexts/OnboardingContext";
-import Stepper from '@/components/onboarding/Stepper'
+// import Stepper from '@/components/onboarding/Stepper'
 import StepperControl from '@/components/onboarding/StepperControl'
 import Borough from '@/components/onboarding/steps/Borough'
 import Situation from '@/components/onboarding/steps/Situation'

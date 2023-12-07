@@ -1,7 +1,7 @@
 [
   {
-    "title": "Financial Management Workshop",
-    "location": "Midtown Manhattan, NYC",
+    "title": "Professional Development School with 150Bond  | In-person",
+    "location": "740 Broadway New York, NY (near Waverley Place)",
     "datetime": {
       "dayOfWeek": "Monday",
       "month": "April",
@@ -9,12 +9,12 @@
       "year": 2023,
       "timeWindow": "1:00 PM - 3:00 PM"
     },
-    "description": "Join us for an interactive workshop on financial management and investment strategies. Learn key concepts to secure your financial future.",
+    "description": "150Bond, is a team of story tellers. They are a team of former journalists, editors, founders, writers, and experienced communicators who work with companies and founders to tell their story, helping to shape the companies, stories, and innovations that will transform society.",
     "imageSrc": "/workshops/eventcard/150bond.png"
   },
   {
-    "title": "Career Development Seminar",
-    "location": "Downtown Brooklyn, NYC",
+    "title": "Financial Management Series | Holiday Money Mindset | Virtual",
+    "location": "Virtual, Zoom Link",
     "datetime": {
       "dayOfWeek": "Wednesday",
       "month": "May",
@@ -22,12 +22,12 @@
       "year": 2023,
       "timeWindow": "2:00 PM - 4:00 PM"
     },
-    "description": "Explore strategies for advancing your career in a competitive job market. Gain insights from industry experts and enhance your professional skills.",
-    "imageSrc": "/workshops/eventcard/mmlaufler.png"
+    "description": "Getting wrapped up in holiday spending? Get savvy with budgeting tips from Belinda Tsui, a Savvy Ladies Helpline Volunteer. Get tips on making your Holiday List and checking it twice and create your holiday money mindset and spend within your limits.",
+    "imageSrc": "/workshops/eventcard/goingplaces.png"
   },
   {
-    "title": "Entrepreneurship Workshop",
-    "location": "Harlem, NYC",
+    "title": "Professional Development School with MM. LAFLEUR | In-person",
+    "location": "1 West 34th street, 5th floor",
     "datetime": {
       "dayOfWeek": "Friday",
       "month": "June",
@@ -35,11 +35,11 @@
       "year": 2023,
       "timeWindow": "10:00 AM - 12:00 PM"
     },
-    "description": "Thinking about starting your own business? Join our entrepreneurship workshop to learn the essentials of business planning and management.",
-    "imageSrc": "/workshops/eventcard/goingplaces.png"
+    "description": "Join Keia Clarke - CEO of the Women’s National Basketball Association (WNBA) team NY Liberty and Sarah LaFleur CEO of clothing brand M.M. LaFleur for this intimate discussion of their professional journeys.",
+    "imageSrc": "/workshops/eventcard/mmlaufler.png"
   },
   {
-    "title": "Personal Finance Series",
+    "title": "Personal Finance Series | In-person",
     "location": "Queens, NYC",
     "datetime": {
       "dayOfWeek": "Tuesday",
@@ -52,7 +52,7 @@
     "imageSrc": "/workshops/personal_finance.jpg"
   },
   {
-    "title": "Leadership Development Workshop",
+    "title": "Leadership Development Workshop | Virtual",
     "location": "Upper West Side, NYC",
     "datetime": {
       "dayOfWeek": "Thursday",
@@ -65,7 +65,7 @@
     "imageSrc": "/workshops/eventcard/150bond.png"
   },
   {
-    "title": "Tech Career Bootcamp",
+    "title": "Tech Career Bootcamp | In-person",
     "location": "Financial District, NYC",
     "datetime": {
       "dayOfWeek": "Saturday",

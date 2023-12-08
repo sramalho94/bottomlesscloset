@@ -66,7 +66,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
   return (
     <>
       {navs.map(({ title, subheaders }, index) => (
-        <li key={index} className="text-xl">
+        <li key={index} className="text-xl" aria-label={`${title} dropdown button`}>
           <details>
             <summary className="hover:underline underline-offset-4 transition decoration-core-red text-black">
               {title}
@@ -108,13 +108,13 @@ function Nav2() {
   return (
     <div className="navbar bg-base-100 justify-between p-0 bg-white z-50 font-mont">
       <Link href="/">
-        <Image
-          src="./logo.svg"
-          width={200}
-          height={20}
-          alt="Bottomless Logo"
-        ></Image>
-      </Link>
+      <Image
+        src="./logo.svg"
+        width={200}
+        height={20}
+        alt="Bottomless Logo"
+        aria-label='Logo and link to go to homepage'></Image>
+        </Link>
       {/* <div className="navbar-start"> */}
       {/* </div> */}
       <div className="navbar-center hidden lg:flex">
@@ -122,18 +122,24 @@ function Nav2() {
           <NavigationDesktop navs={navs} />
           <li className="text-xl">
             <Link legacyBehavior href="/workshops">
-              <p className="text-black">Workshops</p>
+            <a className="text-black" aria-label='navigate to Workshops page'>Workshops</a>
             </Link>
           </li>
         </ul>
       </div>
       <div>
         <Link href="/onboarding">
-          <div className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
-            CAREER HELP
-          </div>
+        <div 
+            className="btn ml-5 mr-3 hidden md:flex bg-white border-core-red border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black"
+            aria-label='navigate to career help page'
+        >
+          CAREER HELP
+        </div>
         </Link>
-        <div className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700">
+        <div 
+            className="btn mr-3 hidden md:flex bg-dark-green text-white rounded-2xl hover:bg-emerald-700"
+            aria-label='navigate to donate page'
+        >
           DONATE
         </div>
         <div className="dropdown">

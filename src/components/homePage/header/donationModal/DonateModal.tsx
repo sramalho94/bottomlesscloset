@@ -8,10 +8,30 @@ import DonorInfoStep from './DonorInfoStep';
 import PaymentStep from './PaymentStep';
 import CreditCardStep from './CreditCardStep';
 import ConfirmationStep from './ConfirmationStep';
+import { createDonation } from '@/services/bcApi';
 
 const DonateModal = () => {
-    
+
     const [donationStep, setDonationStep] = useState(0);
+    const [paymentType, setPaymentType] = useState('one-time');
+    const [donationAmount, setDonationAmount] = useState(0);
+
+    const [honoreeName, setHonoreeName] = useState('');
+    const [comment, setComment] = useState('');
+    const [organizationName, setOrganizationName] = useState('');
+
+    const handleSubmit = () => {
+        createDonation({
+            donor_id: 1,
+            initiative_id: 1,
+            donationType: paymentType,
+            donationValue: donationAmount,
+            inMemoriam: honoreeName,
+            comment: comment,
+            orgMatchName: organizationName
+        })
+        setDonationStep(5)
+    }
 
     return (
         <div className="w-screen h-[475px] md:w-[470px] md:h-[575px] lg:mr-[10px] lg:absolute lg:bottom-[110px] lg:right-[0px] lg:z-[2] lg:pt-[287px] xl:mr-[100px]">
@@ -24,18 +44,44 @@ const DonateModal = () => {
                 />
                 {
                     donationStep === 0 ?
-                    <InfoStep setDonationStep={setDonationStep}/>
-                    : donationStep === 1 ?
-                    <CustomizationStep setDonationStep={setDonationStep}/>
-                    : donationStep === 2 ?
-                    <DonorInfoStep setDonationStep={setDonationStep}/>
-                    : donationStep === 3 ?
-                    <PaymentStep setDonationStep={setDonationStep}/>
-                    : donationStep === 4 ?
-                    <CreditCardStep setDonationStep={setDonationStep}/>
-                    : donationStep === 5 ?
-                    <ConfirmationStep setDonationStep={setDonationStep}/>
-                    : <InfoStep setDonationStep={setDonationStep}/>
+                        <InfoStep
+                            setDonationStep={setDonationStep}
+                            paymentType={paymentType}
+                            setPaymentType={setPaymentType}
+                            donationAmount={donationAmount}
+                            setDonationAmount={setDonationAmount}
+                        />
+                        : donationStep === 1 ?
+                            <CustomizationStep
+                                setDonationStep={setDonationStep}
+                                honoreeName={honoreeName}
+                                setHonoreeName={setHonoreeName}
+                                comment={comment}
+                                setComment={setComment}
+                                organizationName={organizationName}
+                                setOrganizationName={setOrganizationName}
+                            />
+                            : donationStep === 2 ?
+                                <DonorInfoStep
+                                    setDonationStep={setDonationStep}
+                                />
+                                : donationStep === 3 ?
+                                    <PaymentStep 
+                                        setDonationStep={setDonationStep} 
+                                        donationAmount={donationAmount}
+                                        paymentType={paymentType}
+                                    />
+                                    : donationStep === 4 ?
+                                        <CreditCardStep handleSubmit={handleSubmit} />
+                                        : donationStep === 5 ?
+                                            <ConfirmationStep setDonationStep={setDonationStep} />
+                                            : <InfoStep
+                                                setDonationStep={setDonationStep}
+                                                paymentType={paymentType}
+                                                setPaymentType={setPaymentType}
+                                                donationAmount={donationAmount}
+                                                setDonationAmount={setDonationAmount}
+                                            />
                 }
 
             </div>

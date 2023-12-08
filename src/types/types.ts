@@ -42,7 +42,7 @@ export interface DonationData {
   donor_id: number
   initiative_id: number
   donationType: string
-  donationValue: string
+  donationValue: number
   inMemoriam: string
   comment: string
   orgMatchName: string

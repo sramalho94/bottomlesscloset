@@ -29,6 +29,7 @@ function DonorInfoStep({ setDonationStep }: PropsForDonateStep) {
                                 value={firstName}
                                 placeholder='John'
                                 onChange={(e) => setFirstName(e.target.value)}
+                                aria-label='First name text input field'
                             />
                         </div>
                     </div>
@@ -41,6 +42,7 @@ function DonorInfoStep({ setDonationStep }: PropsForDonateStep) {
                                 value={lastName}
                                 placeholder='Doe'
                                 onChange={(e) => setLastName(e.target.value)}
+                                aria-label='Last name text input field'
                             />
                         </div>
                     </div>
@@ -55,6 +57,7 @@ function DonorInfoStep({ setDonationStep }: PropsForDonateStep) {
                             value={email}
                             placeholder='myemail@gmail.com'
                             onChange={(e) => setEmail(e.target.value)}
+                            aria-label='email text input field'
                         />
                     </div>
                 </div>
@@ -67,13 +70,14 @@ function DonorInfoStep({ setDonationStep }: PropsForDonateStep) {
                             value={phoneNumber}
                             placeholder='845-935-2947'
                             onChange={(e) => setPhoneNumber(e.target.value)}
+                            aria-label='Phone number name text input field'
                         />
                     </div>
                 </div>
 
             </div>
 
-            <SubmitDonationBtn handleSubmit={handleSubmit} />
+            <SubmitDonationBtn handleSubmit={handleSubmit} title="Continue" />
         </div>
     )
 }

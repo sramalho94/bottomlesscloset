@@ -11,7 +11,7 @@ function Finish() {
   // };
   return (
     <div >
-      <div className="text-center text-xl font-bold md:text-4xl">
+      <div className="text-center text-xl font-bold md:text-4xl lg:w-4/5 mx-auto">
         Welcome to a Wardrobe of Opportunities at Bottomless Closet!
       </div>
       <div className="hero pt-0">

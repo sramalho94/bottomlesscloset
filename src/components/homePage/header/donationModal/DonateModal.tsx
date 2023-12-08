@@ -74,7 +74,7 @@ const DonateModal = () => {
                                     : donationStep === 4 ?
                                         <CreditCardStep handleSubmit={handleSubmit} />
                                         : donationStep === 5 ?
-                                            <ConfirmationStep />
+                                            <ConfirmationStep setDonationStep={setDonationStep} />
                                             : <InfoStep
                                                 setDonationStep={setDonationStep}
                                                 paymentType={paymentType}

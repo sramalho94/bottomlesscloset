@@ -28,7 +28,6 @@ function CustomizationStep({
     const [expand, setExpand] = useState(0);
 
     const handleSubmit = () => {
-        console.log('Submitted ')
         setDonationStep(2)
     }
     return (
@@ -70,7 +69,7 @@ function CustomizationStep({
                     <p className='text-black text-[20px]'>Leave a comment</p>
                     <div onClick={() => setExpand(expand === 2 ? 0 : 2)}>
                         <Image
-                            className={`m-[5px] ${expand !== 1 && 'rotate-90'}`}
+                            className={`m-[5px] ${expand !== 2 && 'rotate-90'}`}
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
@@ -101,7 +100,7 @@ function CustomizationStep({
                     <p className='text-black text-[20px]'>Organization donation match</p>
                     <div onClick={() => setExpand(expand === 3 ? 0 : 3)}>
                         <Image
-                            className={`m-[5px] ${expand !== 1 && 'rotate-90'}`}
+                            className={`m-[5px] ${expand !== 3 && 'rotate-90'}`}
                             src="./arrow-down.svg"
                             width={19}
                             height={20}
@@ -130,7 +129,7 @@ function CustomizationStep({
 
             </div>
 
-            <SubmitDonationBtn handleSubmit={handleSubmit} />
+            <SubmitDonationBtn handleSubmit={handleSubmit} title="Continue" />
         </div>
     )
 }

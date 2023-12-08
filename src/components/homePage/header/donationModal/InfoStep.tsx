@@ -27,7 +27,6 @@ function InfoStep({
     const amountBtnStyling = 'flex items-center justify-center w-[88px] h-[59px] bg-[#FFDAD6] rounded-[20px] m-[2.5px]';
 
     const handleSubmit = () => {
-        console.log('Submitted ' + donationAmount)
         setDonationStep(1)
     }
 
@@ -105,7 +104,7 @@ function InfoStep({
                 </div>
             </div>
 
-            <SubmitDonationBtn handleSubmit={handleSubmit} />
+            <SubmitDonationBtn handleSubmit={handleSubmit} title="Continue" />
         </div>
     )
 }

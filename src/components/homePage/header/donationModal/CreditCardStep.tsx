@@ -82,7 +82,7 @@ function CreditCardStep({ handleSubmit }: PropsForCreditCardStep) {
 
             </div>
 
-            <SubmitDonationBtn handleSubmit={handleSubmit} />
+            <SubmitDonationBtn handleSubmit={handleSubmit} title="Donate" />
 
         </div>
     )

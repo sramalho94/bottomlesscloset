@@ -77,7 +77,7 @@ function DonorInfoStep({ setDonationStep }: PropsForDonateStep) {
 
             </div>
 
-            <SubmitDonationBtn handleSubmit={handleSubmit} />
+            <SubmitDonationBtn handleSubmit={handleSubmit} title="Continue" />
         </div>
     )
 }

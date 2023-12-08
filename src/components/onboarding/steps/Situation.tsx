@@ -3,6 +3,9 @@ import { useContext } from "react";
 import "./Situation.css";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
+
+
+
 function Situation() {
   // const { userData, setUserData } = useContext(StepperContext);
   // const handleChange = (e) => {

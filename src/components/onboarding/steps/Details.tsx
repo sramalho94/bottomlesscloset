@@ -3,7 +3,17 @@ import { useContext } from "react";
 import "../../../app/globals.css";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
-function Details() {
+
+interface PropsForDetails{
+    firstName: string
+    setFirstName: (firstName: string) => void
+    lastName: string
+    setLastName: (lastName: string) => void
+    email: string 
+    setEmail: (email: string) => void
+}
+
+function Details({firstName, lastName, email, setFirstName, setLastName, setEmail}: PropsForDetails) {
   // const { userData, setUserData } = useContext(StepperContext);
   // const handleChange = (e) => {
   //   const { name, value } = e.target;
@@ -25,6 +35,8 @@ function Details() {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs bg-white"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
         />
       </label>
       <label className="form-control w-full max-w-xs">
@@ -35,6 +47,8 @@ function Details() {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs bg-white"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
         />
       </label>
       <div className="flex flex-col w-full border-opacity-50">
@@ -47,6 +61,8 @@ function Details() {
               type="text"
               placeholder="Type here"
               className="input input-bordered w-full max-w-xs bg-white"
+              value={email}
+          onChange={(e) => setEmail(e.target.value)}
             />
           </label>
           <div className="divider mb-0">OR</div>

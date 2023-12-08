@@ -4,12 +4,21 @@ import Image from "next/image";
 import "./Borough.css";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
-function Borough() {
+interface PropsForBoroughStep{
+    setBorough: (step: string) => void;
+}
+
+function Borough({ setBorough }: PropsForBoroughStep) {
   // const { userData, setUserData } = useContext(StepperContext);
   // const handleChange = (e) => {
   //   const { name, value } = e.target;
   //   setUserData({ ...userData, [name]: value });
   // };
+
+  const handleBoroughChange = (borough: string) => {
+    setBorough(borough);
+    console.log(borough);
+  }
 
   return (
     <div className="flex flex-col">
@@ -21,7 +30,13 @@ function Borough() {
       </div>
       <div className="mt-5 form-control flex flex-row flex-wrap justify-center mt-0">
         <label className="label cursor-pointer">
-          <input type="radio" name="Borough" defaultChecked />
+          <input 
+            type="radio" 
+            name="Borough" 
+            defaultChecked 
+            alt="Manhattan"
+            onClick={(e) => handleBoroughChange("Manhattan")}
+          />
           <Image
             src="./boroughs/Manhattan.svg"
             alt="Option 1"
@@ -30,7 +45,11 @@ function Borough() {
           />
         </label>
         <label className="label cursor-pointer">
-          <input type="radio" name="Borough" />
+          <input 
+            type="radio" 
+            name="Borough"
+            onClick={(e) => handleBoroughChange("Brooklyn")}
+        />
           <Image
             src="./boroughs/Brooklyn.svg"
             alt="Option 1"
@@ -39,7 +58,11 @@ function Borough() {
           />
         </label>
         <label className="label cursor-pointer">
-          <input type="radio" name="Borough" />
+          <input 
+            type="radio" 
+            name="Borough"
+            onClick={(e) => handleBoroughChange("Bronx")}
+        />
           <Image
             src="./boroughs/Bronx.svg"
             alt="Option 1"
@@ -48,7 +71,11 @@ function Borough() {
           />
         </label>
         <label className="label cursor-pointer">
-          <input type="radio" name="Borough" />
+          <input 
+            type="radio" 
+            name="Borough" 
+            onClick={(e) => handleBoroughChange("StatenIsland")}
+          />
           <Image
             src="./boroughs/StatenIsland.svg"
             alt="Option 1"
@@ -57,7 +84,11 @@ function Borough() {
           />
         </label>
         <label className="label cursor-pointer">
-          <input type="radio" name="Borough" />
+          <input 
+            type="radio" 
+            name="Borough" 
+            onClick={(e) => handleBoroughChange("Queens")}
+          />
           <Image
             src="./boroughs/Queens.svg"
             alt="Option 1"

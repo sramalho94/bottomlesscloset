@@ -2,7 +2,12 @@ import React from "react";
 import { useContext } from "react";
 // import { StepperContext } from "@/contexts/OnboardingContext";
 
-function Referrals() {
+interface PropsForReferrals{
+    referralOrg: string
+    setReferralOrg: (referralOrg: string) => void
+}
+
+function Referrals({referralOrg, setReferralOrg}: PropsForReferrals) {
   // const { userData, setUserData } = useContext(StepperContext);
   // const handleChange = (e) => {
   //   const { name, value } = e.target;
@@ -21,12 +26,16 @@ function Referrals() {
         type="text"
         placeholder="Type here"
         className="input input-bordered w-full max-w-xs bg-white"
+        onChange={(e) => setReferralOrg(e.target.value)}
       />
       <label className="form-control w-full max-w-xs">
         <div className="label">
           <span className="label-text text-black">Bottomless Closet Referral Partner</span>
         </div>
-        <select className="select select-bordered bg-white">
+        <select 
+            className="select select-bordered bg-white" 
+            onChange={(e) => setReferralOrg(e.target.value)}
+        >
           <option disabled selected >
             Pick one
           </option>

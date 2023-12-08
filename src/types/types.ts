@@ -47,3 +47,12 @@ export interface DonationData {
   comment: string
   orgMatchName: string
 }
+export interface ClientData {
+    firstName: string
+    lastName: string
+    email: string
+    borough: string
+    service: Array<string>
+    referralOrg: string
+    clothesNeeded: Array<string>
+}

@@ -25,7 +25,7 @@ function Details({ firstName, lastName, email, setFirstName, setLastName, setEma
                 Please fill in your details
             </div>
             <div className="text-core-red text-center text-m w-3/4 md:w-full mx-auto mt-2">
-                We currently only serve the 5 boroughs of New York City.
+                This information is required to continue to the next steps
             </div>{" "}
             <label className="form-control w-full max-w-xs">
                 <div className="label">

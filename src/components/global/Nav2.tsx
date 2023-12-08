@@ -10,7 +10,10 @@ const navs: navElement[] = [
     subheaders: [
       "Financials",
       "Our Initiatives",
-      "History & Mission",
+      {
+        title: "History & Mission",
+        link: "/mission-statement", // Add the link here
+      },
       "Staff & Board of Directors",
       "Contact Info",
     ],
@@ -35,11 +38,19 @@ const NavigationMobile = ({ navs }: navsProp) => {
     <>
       {navs.map(({ title, subheaders }, index) => (
         <li key={index} className="">
-          <a className="text-black ">{title}</a>
+          <p className="text-black ">{title}</p>
           <ul className="p-2 text-black ">
             {subheaders.map((subheader, subIndex) => (
               <li key={subIndex}>
-                <a>{subheader}</a>
+                {typeof subheader === "string" ? (
+                  <p>{subheader}</p>
+                ) : subheader.link ? (
+                  <Link href={subheader.link}>
+                    <p>{subheader.title}</p>
+                  </Link>
+                ) : (
+                  <span>{subheader.title}</span>
+                )}
               </li>
             ))}
           </ul>
@@ -48,6 +59,8 @@ const NavigationMobile = ({ navs }: navsProp) => {
     </>
   );
 };
+
+
 
 const NavigationDesktop = ({ navs }: navsProp) => {
   return (
@@ -61,9 +74,21 @@ const NavigationDesktop = ({ navs }: navsProp) => {
             <ul className="p-2 rounded-none bg-white z-10">
               {subheaders.map((subheader, subIndex) => (
                 <li key={subIndex}>
-                  <a className="text-md hover:underline underline-offset-4 transition decoration-core-red text-black">
-                    {subheader}
-                  </a>
+                  {typeof subheader === "string" ? (
+                    <p className="text-md hover:underline underline-offset-4 transition decoration-core-red text-black">
+                      {subheader}
+                    </p>
+                  ) : subheader.link ? (
+                    <Link href={subheader.link}>
+                      <p className="text-md hover:underline underline-offset-4 transition decoration-core-red text-black">
+                        {subheader.title}
+                      </p>
+                    </Link>
+                  ) : (
+                    <span className="text-md text-black">
+                      {subheader.title}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -72,7 +97,7 @@ const NavigationDesktop = ({ navs }: navsProp) => {
       ))}
     </>
   );
-};
+}
 
 // about us
 // our impact
@@ -124,7 +149,8 @@ function Nav2() {
               className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="currentColor"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -135,21 +161,22 @@ function Nav2() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-1 bg-white">
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-1 bg-white"
+          >
             <NavigationMobile navs={navs} />
             <li>
               <Link legacyBehavior href="/workshops">
-              <a className="bg-white text-black">Workshops</a>
+                <p className="bg-white text-black">Workshops</p>
               </Link>
             </li>
             <Link legacyBehavior href="/onboarding">
-            <a className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
-              CAREER HELP
-            </a>
+              <p className=" mt-3 btn  border-core-red bg-white border-2 rounded-2xl hover:bg-core-red hover:text-white hover:border-core-red text-black">
+                CAREER HELP
+              </p>
             </Link>
-            <a className="btn mt-3 text-white bg-dark-green rounded-2xl hover:bg-emerald-400">
+            <p className="btn mt-3 text-white bg-dark-green rounded-2xl hover:bg-emerald-400">
               DONATE
-            </a>
+            </p>
           </ul>
         </div>
       </div>

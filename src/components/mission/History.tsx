@@ -42,7 +42,7 @@ const History: FC = () => {
         <h1 className="md:text-2xl text-base font-osans font-bold text-core-red text-start mb-2 md:mb-6">
           Our History
         </h1>
-        <div className="flex flex-col md:text-lg text-sm font-osans">
+        <div className="flex flex-col md:text-lg text-sm font-osans text-black">
           {events.map((event, index) => (
             <HistoricalEvent key={index} date={event.date} description={event.description} />
           ))}

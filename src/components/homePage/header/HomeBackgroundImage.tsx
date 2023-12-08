@@ -14,6 +14,7 @@ function HomeBackgroundImage() {
                 width={0}
                 height={0}
                 alt="Home Background Image"
+                aria-label='Picture of women hanging clothing'
             />
             <div className="w-screen h-[0px] relative bottom-[185px] sm:bottom-[270px] md:bottom-[360px] lg:bottom-[475px] pl-[10px] sm:pl-[70px]">
                 <div className="max-w-[636px]">

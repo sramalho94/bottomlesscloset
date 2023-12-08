@@ -14,6 +14,8 @@ import Referrals from "@/components/onboarding/steps/Referrals";
 import Attire from "@/components/onboarding/steps/Attire";
 import Finish from "@/components/onboarding/steps/Finish";
 
+import { createClient } from '../services/clientApi';
+
 function Onboarding() {
     interface ChangeProp {
         handleChange: (evt: React.ChangeEvent<HTMLInputElement>) => void;
@@ -54,7 +56,15 @@ function Onboarding() {
     const [clothesNeeded, setClothesNeeded] = useState([""]);
 
     const handleSubmit = () => {
-        console.log("Submit");
+        createClient({
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            borough: borough,
+            service: service,
+            referralOrg: referralOrg,
+            clothesNeeded: clothesNeeded
+        })
     }
 
     const displayStep = (step: number) => {
@@ -96,7 +106,7 @@ function Onboarding() {
         let newStep = currentStep;
         direction === "next" ? newStep++ : newStep--;
         newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
-        if(newStep === 7){
+        if (newStep === 7) {
             handleSubmit()
         }
     };

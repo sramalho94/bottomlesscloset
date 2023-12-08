@@ -17,7 +17,6 @@ function Borough({ setBorough }: PropsForBoroughStep) {
 
   const handleBoroughChange = (borough: string) => {
     setBorough(borough);
-    console.log(borough);
   }
 
   return (

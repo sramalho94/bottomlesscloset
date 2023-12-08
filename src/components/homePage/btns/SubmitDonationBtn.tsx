@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface PropsForSubmitDonationBtn{
-    handleSubmit: (step: number) => void;
+    handleSubmit: any;
     title: string
 }
 

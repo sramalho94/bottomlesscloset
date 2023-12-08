@@ -13,10 +13,16 @@ export interface PropsForDonateStep {
 
 // <ComponentWithProps headerImage={['./image1.svg','./image2.svg']} altText={null} />
 
-export interface navElement {
-  title: string
-  subheaders: string[]
+export interface subheader {
+  title: string;
+  link?: string; // Make link optional
 }
+
+export interface navElement {
+  title: string;
+  subheaders: (string | subheader)[];
+}
+
 export interface navsProp {
   navs: navElement[]
 }
@@ -40,4 +46,13 @@ export interface DonationData {
   inMemoriam: string
   comment: string
   orgMatchName: string
+}
+export interface ClientData {
+    firstName: string
+    lastName: string
+    email: string
+    borough: string
+    service: Array<string>
+    referralOrg: string
+    clothesNeeded: Array<string>
 }

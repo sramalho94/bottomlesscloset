@@ -27,7 +27,6 @@ function InfoStep({
     const amountBtnStyling = 'flex items-center justify-center w-[88px] h-[59px] bg-[#FFDAD6] rounded-[20px] m-[2.5px]';
 
     const handleSubmit = () => {
-        console.log('Submitted ' + donationAmount)
         setDonationStep(1)
     }
 
@@ -38,12 +37,14 @@ function InfoStep({
                     <button
                         onClick={() => setPaymentType('one-time')}
                         className={paymentType === 'one-time' ? selectedStyling : unselectedStyling}
-                    >
+                        aria-label='select one time donation option button'
+                        >
                         <h1 className='text-[20px]'>One Time</h1>
                     </button>
                     <button
                         onClick={() => setPaymentType('monthly')}
                         className={paymentType === 'monthly' ? selectedStyling : unselectedStyling}
+                        aria-label='select monthly donation option button'
                     >
                         <h1 className='text-[20px]'>Monthly</h1>
                     </button>
@@ -59,24 +60,28 @@ function InfoStep({
                         <div
                             onClick={() => setDonationAmount(25)}
                             className={amountBtnStyling}
-                        >
+                            aria-label='choose 25 dollar donation amount'
+                            >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$25</p>
                         </div>
                         <div
                             onClick={() => setDonationAmount(50)}
                             className={amountBtnStyling}
-                        >
+                            aria-label='choose 50 dollar donation amount'
+                            >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$50</p>
                         </div>
                         <div
                             onClick={() => setDonationAmount(100)}
                             className={amountBtnStyling}
-                        >
+                            aria-label='choose 100 dollar donation amount'
+                            >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$100</p>
                         </div>
                         <div
                             onClick={() => setDonationAmount(200)}
                             className={amountBtnStyling}
+                            aria-label='choose 200 dollar donation amount'
                         >
                             <p className='font-bold text-[#630A0E] text-[20px]'>$200</p>
                         </div>
@@ -89,6 +94,7 @@ function InfoStep({
                     <div className='flex items-center text-black text-[20px] p-[5px] w-[100%] h-[50px] border border-[#8692A6] rounded-[6px]'>
                         <p className='text-black text-[20px] mr-[5px]'>$</p>
                         <input
+                            aria-label='custom donation amount input'
                             className='text-black text-[20px] w-[100%] h-[50px] bg-transparent focus:outline-none'
                             type='number'
                             value={donationAmount}
@@ -98,7 +104,7 @@ function InfoStep({
                 </div>
             </div>
 
-            <SubmitDonationBtn handleSubmit={handleSubmit} />
+            <SubmitDonationBtn handleSubmit={handleSubmit} title="Continue" />
         </div>
     )
 }

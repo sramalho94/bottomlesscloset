@@ -4,7 +4,7 @@
 
 ---
 
-#### This is the backend for GA Winter Hackathon Group 4's project
+#### This is the frontend for GA Winter Hackathon Group 4's project
 
 ---
 

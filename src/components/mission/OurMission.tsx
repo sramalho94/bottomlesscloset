@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function OurMission() {
   return (
       <div className="grid md:grid-cols-2 pt-8 md:pt-16 px-12 md:px-16 xl:px-20  ">
-        <div className="">
+        <div>
           <h1 className="md:text-2xl text-base font-mont font-bold text-core-red text-start mb-2 md:mb-4">
             Our Mission
           </h1>
-          <p className=" font-osans md:text-xl text-sm font-medium break-words  ">
+          <p className=" font-osans md:text-xl text-sm font-medium break-words text-black">
             Bottomless Closet empowers disadvantaged New York City women for
             workforce entry, impacting over 46,000 lives with dedicated
             volunteers and partners.
